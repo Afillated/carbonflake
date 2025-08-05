@@ -19,6 +19,7 @@
     ../apps/spicetify.nix
     ../apps/steam.nix
     ../system/grub/grub.nix
+    ../system/quickshell/quickshell.nix
   ];
 
   # Bootloader.
@@ -140,6 +141,7 @@
     vesktop
     nil
     starship
+    inputs.hyprland-contrib.packages.${pkgs.system}.grimblast
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
