@@ -20,6 +20,7 @@
     ../apps/steam.nix
     ../system/grub/grub.nix
     ../system/quickshell/quickshell.nix
+    ../system/nvidia/nvidia.nix
   ];
 
   # Bootloader.
@@ -93,6 +94,7 @@
     extraGroups = [
       "networkmanager"
       "wheel"
+      "gamemode"
     ];
     packages = with pkgs; [ ];
   };
@@ -102,26 +104,26 @@
   programs.firefox.enable = true;
 
   #nvidia drivers
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
-  };
+  # hardware.graphics = {
+    # enable = true;
+    # enable32Bit = true;
+  # };
 
-  services.xserver.videoDrivers = [ "nviida" ];
+  # services.xserver.videoDrivers = [ "nviida" ];
 
-  hardware.nvidia = {
-    modesetting.enable = true;
+  # hardware.nvidia = {
+    # modesetting.enable = true;
 
-    powerManagement.enable = false;
-    powerManagement.finegrained = false;
+    # powerManagement.enable = false;
+    # powerManagement.finegrained = false;
 
-    open = false;
+    # open = false;
 
-    nvidiaSettings = true;
+    # nvidiaSettings = true;
 
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    # package = config.boot.kernelPackages.nvidiaPackages.stable;
 
-  };
+  # };
 
   #Enable flakes
   nix.settings.experimental-features = [
