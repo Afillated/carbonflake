@@ -10,9 +10,10 @@
 
   boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "usb_storage" "usbhid" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [ ];
-  boot.extraModulePackages = [ ];
-
+  boot.kernelModules = [ "wl" ];
+  boot.extraModulePackages = with config.boot.kernelPackages; [ broadcom_sta ];
+  boot.blacklistedKernelModules = [ "b43" "bcma" ];
+  
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/0e9967e0-1318-48c3-b175-222abe7db406";
       fsType = "ext4";

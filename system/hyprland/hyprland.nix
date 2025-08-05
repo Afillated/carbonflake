@@ -28,6 +28,7 @@
    mako
   # walker
    rofi-wayland
+   fastfetch
 
 
    bibata-cursors
@@ -47,9 +48,9 @@
    NVD_BACKEND = "direct";
 
 
-    XCURSOR_THEME = "Bibata-Modern-Classic";
+    XCURSOR_THEME = "Bibata-Modern-Amber";
     XCURSOR_SIZE = "24";
-    HYPRCURSOR_THEME = "Bibata-Modern-Classic";
+    HYPRCURSOR_THEME = "Bibata-Modern-Amber";
     HYPRCURSOR_SIZE = "24";
     
 

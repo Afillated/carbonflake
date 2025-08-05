@@ -2,23 +2,28 @@
 # your system.  Help is available in the configuration.nix(5) man page
 #pp and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
 
-
-      ../system/hyprland/hyprland.nix
-      ../system/nh/nh.nix
-      ../apps/spicetify.nix
-      ../apps/steam.nix
-    ];
+    ../system/hyprland/hyprland.nix
+    ../system/nh/nh.nix
+    ../apps/spicetify.nix
+    ../apps/steam.nix
+    ../system/grub/grub.nix
+  ];
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  # boot.loader.systemd-boot.enable = true;
+  # boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
@@ -32,12 +37,14 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  nixpkgs.config.permittedInsecurePackages = [
+    "broadcom-sta-6.30.223.271-57-6.16"
+  ];
 
   #login managers or something
   services.greetd.enable = true;
   programs.regreet.enable = true;
 
-  
   # Set your time zone.
   time.timeZone = "Asia/Kolkata";
 
@@ -56,7 +63,9 @@
     LC_TIME = "en_IN";
   };
 
-   services.pulseaudio.enable = false;
+  # services.xserver.enable = true;
+
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -80,8 +89,11 @@
   users.users.carbon = {
     isNormalUser = true;
     description = "afillatedcarbon";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
+    packages = with pkgs; [ ];
   };
 
   # Allow unfree packages
@@ -94,9 +106,7 @@
     enable32Bit = true;
   };
 
-
   services.xserver.videoDrivers = [ "nviida" ];
-
 
   hardware.nvidia = {
     modesetting.enable = true;
@@ -109,25 +119,27 @@
     nvidiaSettings = true;
 
     package = config.boot.kernelPackages.nvidiaPackages.stable;
-    
+
   };
 
   #Enable flakes
-  nix.settings.experimental-features = ["nix-command" "flakes"];
-  
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
-
-
-
+  programs.bash.interactiveShellInit = ''eval "$(starship init bash)"'';
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
-     helix
-     git
-     inputs.zen-browser.packages.${pkgs.system}.twilight
-     vesktop
+    #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    #  wget
+    helix
+    git
+    inputs.zen-browser.packages.${pkgs.system}.twilight
+    vesktop
+    nil
+    starship
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
