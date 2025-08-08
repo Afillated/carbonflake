@@ -21,6 +21,7 @@
     ../system/grub/grub.nix
     ../system/quickshell/quickshell.nix
     ../system/nvidia/nvidia.nix
+    ../system/greetd/greetd.nix
   ];
 
   # Bootloader.
@@ -44,8 +45,9 @@
   ];
 
   #login managers or something
-  services.greetd.enable = true;
-  programs.regreet.enable = true;
+  # services.greetd.enable = true;
+  # programs.regreet.enable = true;
+  # programs.regreet.cursorTheme.name = "Bibata-Modern-Amber";
 
   # Set your time zone.
   time.timeZone = "Asia/Kolkata";
@@ -90,7 +92,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.carbon = {
     isNormalUser = true;
-    description = "afillatedcarbon";
+    description = "Afillatedcarbon";
     extraGroups = [
       "networkmanager"
       "wheel"
