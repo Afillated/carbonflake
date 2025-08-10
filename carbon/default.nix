@@ -15,7 +15,8 @@
     ./hardware-configuration.nix
 
     ../system/hyprland/hyprland.nix
-    ../system/nh/nh.nix
+    ../system/shell/nh.nix
+    ../system/shell/yazi.nix
     ../apps/spicetify.nix
     ../apps/steam.nix
     ../system/grub/grub.nix
@@ -146,6 +147,7 @@
     nil
     starship
     inputs.hyprland-contrib.packages.${pkgs.system}.grimblast
+    netbeans
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
