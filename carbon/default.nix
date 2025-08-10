@@ -19,6 +19,7 @@
     ../system/shell/yazi.nix
     ../apps/spicetify.nix
     ../apps/steam.nix
+    ../apps/libreoffice.nix
     ../system/grub/grub.nix
     ../system/quickshell/quickshell.nix
     ../system/nvidia/nvidia.nix
