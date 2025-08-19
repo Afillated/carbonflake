@@ -107,27 +107,7 @@
   nixpkgs.config.allowUnfree = true;
   programs.firefox.enable = true;
 
-  #nvidia drivers
-  # hardware.graphics = {
-    # enable = true;
-    # enable32Bit = true;
-  # };
 
-  # services.xserver.videoDrivers = [ "nviida" ];
-
-  # hardware.nvidia = {
-    # modesetting.enable = true;
-
-    # powerManagement.enable = false;
-    # powerManagement.finegrained = false;
-
-    # open = false;
-
-    # nvidiaSettings = true;
-
-    # package = config.boot.kernelPackages.nvidiaPackages.stable;
-
-  # };
 
   #Enable flakes
   nix.settings.experimental-features = [
@@ -149,6 +129,8 @@
     starship
     inputs.hyprland-contrib.packages.${pkgs.system}.grimblast
     netbeans
+    pmbootstrap
+    android-tools
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
