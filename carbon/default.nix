@@ -131,6 +131,7 @@
     netbeans
     pmbootstrap
     android-tools
+    jmtpfs
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
