@@ -14,16 +14,8 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
 
-    ../system/hyprland/hyprland.nix
-    ../system/shell/nh.nix
-    ../system/shell/yazi.nix
-    ../apps/spicetify.nix
-    ../apps/steam.nix
-    ../apps/libreoffice.nix
-    ../system/grub/grub.nix
-    ../system/quickshell/quickshell.nix
-    ../system/nvidia/nvidia.nix
-    ../system/greetd/greetd.nix
+    ../system
+    ../apps
   ];
 
   # Bootloader.
