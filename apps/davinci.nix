@@ -6,6 +6,6 @@
 }:
 {
   environment.systemPackages = [
-    pkgs.davinci-resolve-studio
+    pkgs.davinci-resolve
   ];
 }
