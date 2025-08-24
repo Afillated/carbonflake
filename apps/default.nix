@@ -12,5 +12,6 @@
     ../apps/libreoffice.nix
     ../apps/davinci.nix
     ../apps/obs.nix
+    ../apps/vlc.nix
   ];
 }
