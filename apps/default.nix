@@ -12,5 +12,5 @@
     ../apps/libreoffice.nix
     ../apps/openshot.nix
     ../apps/obs.nix
-    ../apps/vlc.nix;
+    ../apps/vlc.nix
 }
