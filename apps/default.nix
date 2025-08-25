@@ -13,4 +13,5 @@
     ../apps/openshot.nix
     ../apps/obs.nix
     ../apps/vlc.nix
+    ];
 }
