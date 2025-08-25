@@ -10,8 +10,7 @@
     ../apps/spicetify.nix
     ../apps/steam.nix
     ../apps/libreoffice.nix
-    ../apps/davinci.nix
+    ../apps/openshot.nix
     ../apps/obs.nix
-    ../apps/vlc.nix
-  ];
+    ../apps/vlc.nix;
 }

@@ -6,6 +6,6 @@
 }:
 {
   environment.systemPackages = [
-    pkgs.davinci-resolve
+      pkgs.openshot-qt    
   ];
 }
