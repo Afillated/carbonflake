@@ -20,7 +20,7 @@
         pointer
       ];
 
-      theme = spicePkgs.themes.onepunch;
-      # colorScheme = "mocha";
+      theme = spicePkgs.themes.sleek;
+      colorScheme = "Psycho";
     };
 }

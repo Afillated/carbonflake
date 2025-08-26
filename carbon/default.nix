@@ -35,7 +35,7 @@
   # Enable networking
   networking.networkmanager.enable = true;
   nixpkgs.config.permittedInsecurePackages = [
-    "broadcom-sta-6.30.223.271-57-6.16.1"
+    "broadcom-sta-6.30.223.271-57-6.16.3"
   ];
 
   #login managers or something
