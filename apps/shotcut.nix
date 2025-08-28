@@ -6,6 +6,6 @@
 }:
 {
   environment.systemPackages = [
-      pkgs.openshot-qt    
+      pkgs.shotcut    
   ];
 }

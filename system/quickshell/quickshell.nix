@@ -6,4 +6,5 @@ environment.systemPackages = with pkgs.kdePackages; [
     qtstyleplugin-kvantum
     qtsvg
   ];
+  qt.enable = true;
 }
