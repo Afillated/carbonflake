@@ -22,6 +22,7 @@
       # Mismatched system dependencies will lead to crashes and other issues.
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    
   };
 
   outputs =
