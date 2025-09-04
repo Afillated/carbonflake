@@ -4,4 +4,8 @@
 		_7zz = _7zz-rar;  # Support for RAR extraction
 	})
   ];
+
+  hjem.users.carbon.files = {
+  	".config/yazi".source = ../../config/yazi;
+  };
 }

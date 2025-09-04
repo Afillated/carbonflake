@@ -17,5 +17,6 @@
     nil
     tree
     dualsensectl
-        jmtpfs  ];
+    jmtpfs
+  ];
 }
