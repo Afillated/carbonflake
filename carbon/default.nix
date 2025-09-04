@@ -125,6 +125,7 @@
     android-tools
     jmtpfs
     dualsensectl
+    tree
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
