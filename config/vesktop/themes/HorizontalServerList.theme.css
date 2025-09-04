@@ -1,0 +1,32 @@
+/**
+ * @name Horizontal Server List
+ * @author Gibbu
+ * @version 3.0.0
+ * @description Moves the server list from the left to the top of Discord.
+ * @source https://github.com/DiscordStyles/HorizontalServerList
+ * @invite ZHthyCw
+*/
+
+@import url('https://discordstyles.github.io/HorizontalServerList/HorizontalServerList.css');
+
+
+
+/* Bottom HorizontalServerList. Simply remove the comments surrounding the @import to enable it. */
+@import url("https://discordstyles.github.io/HorizontalServerList/bottomhsl.css");
+:root {
+  --HSL-server-direction: column; /* Direction of the server list. | OPTIONS: column, column-reverse | DEFAULT: column */
+  --HSL-server-alignment: center; /* Alignment of the server list. | OPTIONS: flex-start, center, flex-end | DEFAULT: flex-start */
+}
+
+
+#app-mount .guilds_c48ade {
+  transform-origin: top left;
+  rotate: -90deg;
+  height: 99vw !important;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  bottom: unset;
+  position: absolute !important;
+  left: 0;
+}
+

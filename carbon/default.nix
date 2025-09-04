@@ -16,6 +16,7 @@
 
     ../system
     ../apps
+    ../gaming
   ];
 
   # Bootloader.
@@ -115,7 +116,7 @@
     helix
     git
     inputs.zen-browser.packages.${pkgs.system}.twilight
-    vesktop
+    # vesktop
     nil
     starship
     inputs.hyprland-contrib.packages.${pkgs.system}.grimblast

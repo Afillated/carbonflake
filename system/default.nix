@@ -15,6 +15,7 @@
     ../system/quickshell/quickshell.nix
     ../system/nvidia/nvidia.nix
     ../system/greetd/greetd.nix
+    ../system/hjem/hjem.nix
   ];
   fonts.packages = with pkgs;
     [

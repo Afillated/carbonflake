@@ -8,7 +8,6 @@
 {
   imports = [
     ../apps/spicetify.nix
-    ../apps/steam.nix
     ../apps/libreoffice.nix
     ../apps/shotcut.nix
     ../apps/obs.nix
