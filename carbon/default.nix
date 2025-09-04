@@ -108,24 +108,14 @@
     "flakes"
   ];
 
-  programs.bash.interactiveShellInit = ''eval "$(starship init bash)"'';
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    # the basics
-    helix
-    git
     inputs.zen-browser.packages.${pkgs.system}.twilight
-    # vesktop
-    nil
-    starship
     inputs.hyprland-contrib.packages.${pkgs.system}.grimblast
     netbeans
     pmbootstrap
     android-tools
-    jmtpfs
-    dualsensectl
-    tree
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
