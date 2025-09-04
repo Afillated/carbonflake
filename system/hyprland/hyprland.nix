@@ -76,5 +76,6 @@
 
   hjem.users.carbon.files = {
     ".config/mako".source = ../../config/mako;
+    ".config/rofi".source = ../../config/rofi;
   };
 }
