@@ -116,6 +116,7 @@
     netbeans
     pmbootstrap
     android-tools
+    qbittorrent
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
