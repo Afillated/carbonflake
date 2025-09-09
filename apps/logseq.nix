@@ -7,6 +7,6 @@
 
 {
   environment.systemPackages = [
-    pkgs.trilium-desktop
+    pkgs.logseq
   ];
 }
