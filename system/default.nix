@@ -15,6 +15,7 @@
     ../system/greetd/greetd.nix
     ../system/hjem/hjem.nix
     ../system/shell
+    # ../system/audio.nix
   ];
   fonts.packages = with pkgs;
     [

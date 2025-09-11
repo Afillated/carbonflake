@@ -36,7 +36,7 @@
   # Enable networking
   networking.networkmanager.enable = true;
   nixpkgs.config.permittedInsecurePackages = [
-    "broadcom-sta-6.30.223.271-57-6.16.5"
+    "broadcom-sta-6.30.223.271-57-6.16.6"
   ];
 
   #login managers or something
@@ -78,6 +78,9 @@
     # no need to redefine it in your config for now)
     #media-session.enable = true;
   };
+
+ 
+  
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -117,7 +120,15 @@
     pmbootstrap
     android-tools
     qbittorrent
+    # mysql84
   ];
+
+
+  services.mysql = {
+    enable = true;
+    package = pkgs.mariadb;
+    
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
