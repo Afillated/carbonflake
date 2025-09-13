@@ -18,6 +18,7 @@
     tree
     dualsensectl
     jmtpfs
+    yt-dlp
   ];
 
   hjem.users.carbon.files = {
