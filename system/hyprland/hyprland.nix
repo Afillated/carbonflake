@@ -27,7 +27,7 @@
     hyprshot
     mako
     # walker
-    rofi-wayland
+    rofi
     fastfetch
 
     bibata-cursors
