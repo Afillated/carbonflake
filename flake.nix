@@ -14,14 +14,14 @@
     hyprland-contrib = {
       url = "github:hyprwm/contrib";
     };
-    # quickshell = {
+    quickshell = {
       # add ?ref=<tag> to track a tag
-      # url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
+      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
 
       # THIS IS IMPORTANT
       # Mismatched system dependencies will lead to crashes and other issues.
-      # inputs.nixpkgs.follows = "nixpkgs";
-    # };
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     hjem = {
         url = "github:feel-co/hjem";
         # You may want hjem to use your defined nixpkgs input to

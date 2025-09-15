@@ -21,6 +21,10 @@
     yt-dlp
   ];
 
+  environment.sessionVariables = {
+  EDITOR = "hx";
+};
+
   hjem.users.carbon.files = {
     ".config/helix".source = ../../config/helix;
     ".config/kitty".source = ../../config/kitty;

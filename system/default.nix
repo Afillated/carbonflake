@@ -10,12 +10,12 @@
 
     ../system/hyprland/hyprland.nix
     ../system/grub/grub.nix
-    # ../system/quickshell/quickshell.nix
+    ../system/quickshell/quickshell.nix
     ../system/nvidia/nvidia.nix
     ../system/greetd/greetd.nix
     ../system/hjem/hjem.nix
     ../system/shell
-    # ../system/audio.nix
+  
   ];
   fonts.packages = with pkgs;
     [
