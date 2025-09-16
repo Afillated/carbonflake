@@ -19,6 +19,7 @@
     dualsensectl
     jmtpfs
     yt-dlp
+    jdt-language-server
   ];
 
   environment.sessionVariables = {

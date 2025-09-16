@@ -12,6 +12,6 @@
     ../apps/shotcut.nix
     ../apps/obs.nix
     ../apps/vlc.nix
-    ../apps/logseq.nix
+    ../apps/notes.nix
     ];
 }
