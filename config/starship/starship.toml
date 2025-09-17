@@ -62,6 +62,6 @@ format = '[[ $time ](fg:#aa0000 bg:#212121)]($style)'
 [cmd_duration]
 min_time = 500
 show_notifications = true
-min_time_to_notify = 300000
+min_time_to_notify = 600000
 style = "fg:#aa0000 bg:#212121"
 format = '[󱫐 $duration]($style)'
