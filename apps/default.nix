@@ -13,5 +13,6 @@
     ../apps/obs.nix
     ../apps/vlc.nix
     ../apps/notes.nix
+    ../apps/diskutils.nix
     ];
 }
