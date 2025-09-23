@@ -10,7 +10,7 @@
 
     ../system/hyprland/hyprland.nix
     ../system/grub/grub.nix
-    # ../system/quickshell/quickshell.nix
+    ../system/quickshell/quickshell.nix
     ../system/hardware
     ../system/greetd/greetd.nix
     ../system/hjem/hjem.nix

@@ -20,6 +20,7 @@
     jmtpfs
     yt-dlp
     jdt-language-server
+    btop
   ];
 
   environment.sessionVariables = {
