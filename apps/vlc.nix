@@ -5,7 +5,8 @@
   ...
 }:
 {
-environment.systemPackages = [
+  environment.systemPackages = [
     pkgs.vlc
+    pkgs.sly
   ];
 }
