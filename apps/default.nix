@@ -11,7 +11,7 @@
     ../apps/libreoffice.nix
     ../apps/shotcut.nix
     ../apps/obs.nix
-    ../apps/vlc.nix
+    ../apps/media.nix
     ../apps/notes.nix
     ../apps/diskutils.nix
     ];

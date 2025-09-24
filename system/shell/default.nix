@@ -24,8 +24,8 @@
   ];
 
   environment.sessionVariables = {
-  EDITOR = "hx";
-};
+    EDITOR = "hx";
+  };
 
   hjem.users.carbon.files = {
     ".config/helix".source = ../../config/helix;
