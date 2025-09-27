@@ -29,6 +29,7 @@
     # walker
     rofi
     fastfetch
+    wleave
 
     bibata-cursors
     nwg-look
