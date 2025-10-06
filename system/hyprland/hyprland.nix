@@ -26,9 +26,7 @@
     hyprcursor
     hyprshot
     mako
-    # walker
     rofi
-    fastfetch
     wleave
 
     bibata-cursors

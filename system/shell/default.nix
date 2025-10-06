@@ -21,6 +21,7 @@
     yt-dlp
     jdt-language-server
     btop
+    fastfetch
   ];
 
   environment.sessionVariables = {
@@ -30,5 +31,7 @@
   hjem.users.carbon.files = {
     ".config/helix".source = ../../config/helix;
     ".config/kitty".source = ../../config/kitty;
+    ".config/fastfetch".source = ../../config/fastfetch;
+
   };
 }
