@@ -35,9 +35,9 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-  nixpkgs.config.permittedInsecurePackages = [
-    "broadcom-sta-6.30.223.271-57-6.16.9"
-  ];
+  # nixpkgs.config.permittedInsecurePackages = [
+  #   "broadcom-sta-6.30.223.271-57-6.17"
+  # ];
 
   # Set your time zone.
   time.timeZone = "Asia/Kolkata";
@@ -99,15 +99,14 @@
     pmbootstrap
     android-tools
     qbittorrent
-    # mysql84
   ];
 
 
-  services.mysql = {
-    enable = true;
-    package = pkgs.mariadb;
+  # services.mysql = {
+  #   enable = true;
+  #   package = pkgs.mariadb;
     
-  };
+  # };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

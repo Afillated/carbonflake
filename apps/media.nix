@@ -8,5 +8,6 @@
   environment.systemPackages = [
     pkgs.vlc
     pkgs.sly
+    # pkgs.shotcut
   ];
 }
