@@ -13,7 +13,7 @@
     waybar
     libnotify
     networkmanagerapplet
-    pavucontrol
+    lxqt.pavucontrol-qt
     wl-clipboard
     clipse
     playerctl
@@ -56,7 +56,6 @@
 
     # Additional cursor/theme variables for better app support
     GTK_THEME = "Adwaita:dark"; # Helps with consistent theming
-    QT_QPA_PLATFORMTHEME = "gtk3"; # Makes Qt apps use GTK cursor theme
     ELECTRON_OZONE_PLATFORM_HINT = "auto";
     NIXOS_OZONE_WL = "1";
   };

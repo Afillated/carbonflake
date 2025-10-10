@@ -8,7 +8,7 @@
 {
   imports = [
 
-    ../system/hyprland/hyprland.nix
+    ../system/hyprland
     ../system/grub/grub.nix
     ../system/quickshell/quickshell.nix
     ../system/hardware

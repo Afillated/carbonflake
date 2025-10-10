@@ -24,7 +24,7 @@
   # boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_6_16;
 
   networking.hostName = "carbon"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -35,9 +35,9 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-  # nixpkgs.config.permittedInsecurePackages = [
-  #   "broadcom-sta-6.30.223.271-57-6.17"
-  # ];
+  nixpkgs.config.permittedInsecurePackages = [
+    "broadcom-sta-6.30.223.271-57-6.16.10"
+  ];
 
   # Set your time zone.
   time.timeZone = "Asia/Kolkata";
