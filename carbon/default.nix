@@ -36,7 +36,7 @@
   # Enable networking
   networking.networkmanager.enable = true;
   nixpkgs.config.permittedInsecurePackages = [
-    "broadcom-sta-6.30.223.271-57-6.16.10"
+    "broadcom-sta-6.30.223.271-57-6.16.11"
   ];
 
   # Set your time zone.
