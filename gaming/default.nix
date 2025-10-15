@@ -5,7 +5,8 @@
   ...
 }: {
     imports = [
-      ../gaming/vesktop.nix
-      ../gaming/steam.nix
+      ./steam.nix
+      ./dualsense.nix
+      ./vesktop.nix
     ];
   }

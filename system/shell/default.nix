@@ -16,7 +16,7 @@
     git
     nil
     tree
-    dualsensectl
+
     jmtpfs
     yt-dlp
     jdt-language-server

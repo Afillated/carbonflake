@@ -8,7 +8,7 @@
   environment.systemPackages = [
     pkgs.vlc
     pkgs.sly
-    pkgs.davinci-resolve
+    pkgs.kdePackages.kdenlive
     
   ];
 }
