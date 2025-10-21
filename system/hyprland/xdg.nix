@@ -20,14 +20,14 @@
     };
   };
   hjem.users.carbon.files = {
-    ".config/xdg-desktop-portal-termfilechooser/config".text = ''
-      [filechooser]
-      cmd=$HOME/.config/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
-      default_dir=$HOME
-      env=TERMCMD=kitty
-          EDITOR=hx
+   # ".config/xdg-desktop-portal-termfilechooser/config".text = ''
+   #    [filechooser]
+   #    cmd=$HOME/.config/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
+   #    default_dir=$HOME
+   #    env=TERMCMD=kitty
+   #        EDITOR=hx
             
-    '';
+   #  ''; -> this doesnt work lol, I can just use the default config but wanna make it popup yk
     ".config/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh".source =../../config/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh;
   };
 

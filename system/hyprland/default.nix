@@ -2,7 +2,7 @@
   imports = [
     ./qt.nix
     ./hyprland.nix
-    # ./xdg.nix
+    ./xdg.nix
   ];
   
 }
