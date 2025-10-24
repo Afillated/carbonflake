@@ -8,8 +8,8 @@
       ./steam.nix
       ./dualsense.nix
       ./vesktop.nix
+      ./emulators.nix
     ];
 
 
-    environment.systemPackages = with pkgs; [ryubing];
   }

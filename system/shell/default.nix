@@ -16,7 +16,6 @@
     git
     nil
     tree
-
     jmtpfs
     yt-dlp
     jdt-language-server
