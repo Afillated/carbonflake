@@ -9,4 +9,7 @@
       ./dualsense.nix
       ./vesktop.nix
     ];
+
+
+    environment.systemPackages = with pkgs; [ryubing];
   }

@@ -94,7 +94,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     inputs.zen-browser.packages.${pkgs.system}.twilight
-    inputs.hyprland-contrib.packages.${pkgs.system}.grimblast
     netbeans
     pmbootstrap
     android-tools

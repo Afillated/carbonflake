@@ -16,29 +16,32 @@
       url = "github:hyprwm/contrib";
     };
     quickshell = {
-    # # add ?ref=<tag> to track a tag
-    url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
+      # # add ?ref=<tag> to track a tag
+      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
 
-    # # THIS IS IMPORTANT
-    # # Mismatched system dependencies will lead to crashes and other issues.
-    inputs.nixpkgs.follows = "nixpkgs";
+      # # THIS IS IMPORTANT
+      # # Mismatched system dependencies will lead to crashes and other issues.
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     hjem = {
-        url = "github:feel-co/hjem";
-        # You may want hjem to use your defined nixpkgs input to
-        # minimize redundancies.
-        inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:feel-co/hjem";
+      # You may want hjem to use your defined nixpkgs input to
+      # minimize redundancies.
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     hjem-rum = {
-        url = "github:snugnug/hjem-rum";
-        # You may want hjem-rum to use your defined nixpkgs input to
-        # minimize redundancies.
-        inputs.nixpkgs.follows = "nixpkgs";
-        # Same goes for hjem, to avoid discrepancies between the version
-        # you use directly and the one hjem-rum uses.
-        inputs.hjem.follows = "hjem";
+      url = "github:snugnug/hjem-rum";
+      # You may want hjem-rum to use your defined nixpkgs input to
+      # minimize redundancies.
+      inputs.nixpkgs.follows = "nixpkgs";
+      # Same goes for hjem, to avoid discrepancies between the version
+      # you use directly and the one hjem-rum uses.
+      inputs.hjem.follows = "hjem";
     };
-    
+    hyprlauncher = {
+      url = "github:hyprwm/hyprlauncher";
+    };
+
   };
 
   outputs =

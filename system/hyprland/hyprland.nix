@@ -1,5 +1,11 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
+let
+  hyprlauncher = inputs.hyprlauncher.packages.${pkgs.system}.default;
+  grimblast = inputs.hyprland-contrib.packages.${pkgs.system}.grimblast;
+in
+
 {
+
   programs.hyprland = {
     enable = true;
     package = pkgs.hyprland;
@@ -28,6 +34,8 @@
     mako
     rofi
     wleave
+    hyprlauncher
+    grimblast
 
     bibata-cursors
     nwg-look
