@@ -27,7 +27,7 @@ in
     libqalculate
     hyprpaper
     hyprpolkitagent
-    hyprsysteminfo
+    # hyprsysteminfo
     hyprland-qt-support
     hyprcursor
     hyprshot

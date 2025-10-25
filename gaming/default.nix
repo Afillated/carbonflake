@@ -9,6 +9,7 @@
       ./dualsense.nix
       ./vesktop.nix
       ./emulators.nix
+      ./modmanagers.nix
     ];
 
 
