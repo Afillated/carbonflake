@@ -17,10 +17,10 @@
       # resolution = "1080p";
       # };
     };
-    # kernelPackages = pkgs.linuxPackages_latest;
+
 
     loader.efi.canTouchEfiVariables = true;
-    plymouth.enable = true;
+
 
     # Add NTFS support
     supportedFilesystems = [ "ntfs" ];

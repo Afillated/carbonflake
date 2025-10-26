@@ -7,11 +7,12 @@
 
 {
   imports = [
-    ../apps/spicetify.nix
-    ../apps/libreoffice.nix
-    ../apps/obs.nix
-    ../apps/media.nix
-    ../apps/notes.nix
-    ../apps/diskutils.nix
-    ];
+    ./spicetify.nix
+    ./media.nix
+    ./diskutils.nix
+    ./libreoffice.nix
+    ./obs.nix
+    ./notes.nix
+
+  ];
 }
