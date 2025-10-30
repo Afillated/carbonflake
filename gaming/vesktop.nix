@@ -11,7 +11,7 @@
 
   hjem.users.carbon.files = {
     ".config/vesktop/themes".source = ../config/vesktop/themes;
-    # ".config/vesktop/settings".source = ../config/vesktop/settings;
+
   };
 
 }
