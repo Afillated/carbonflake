@@ -13,13 +13,23 @@
 
 /* Bottom HorizontalServerList. Simply remove the comments surrounding the @import to enable it. */
 @import url("https://discordstyles.github.io/HorizontalServerList/bottomhsl.css");
+
+
 :root {
-  --HSL-server-direction: column; /* Direction of the server list. | OPTIONS: column, column-reverse | DEFAULT: column */
-  --HSL-server-alignment: center; /* Alignment of the server list. | OPTIONS: flex-start, center, flex-end | DEFAULT: flex-start */
+  --HSL-server-direction: column;
+  --HSL-server-alignment: center;
 }
 
+.content__5e434 {
+  margin-top: var(--custom-guild-list-width);
+  overflow: visible !important;
+}
 
-#app-mount .guilds_c48ade {
+#app-mount .sidebar__5e434 {
+  border-radius: 0;
+  overflow: visible !important;
+}
+#app-mount .guilds__5e434 {
   transform-origin: top left;
   rotate: -90deg;
   height: 99vw !important;
@@ -29,4 +39,52 @@
   position: absolute !important;
   left: 0;
 }
+#app-mount .tree_ef3116 {
+  padding-top: var(--HSL-top-padding, var(--size-sm));
+}
+#app-mount .wrapper_cc5dd2 {
+  rotate: 90deg;
+}
+#app-mount .itemsContainer_ef3116,
+#app-mount .stack_dbd263 {
+  flex-direction: var(--HSL-server-direction);
+  justify-content: var(--HSL-server-alignment);
+}
 
+.container__5e434 > div[style]:not(.base__5e434) {
+  width: 100vw !important;
+  height: var(--custom-guild-list-width) !important;
+  position: absolute;
+  top: calc(var(--custom-guild-list-width) + var(--custom-app-top-bar-height));
+  pointer-events: none;
+  z-index: 1;
+}
+.container__5e434 > div[style]:not(.base__5e434) .guilds__5e434 {
+  pointer-events: all;
+}
+.container__5e434 > div[style]:not(.base__5e434) + .base__5e434 .content__5e434 {
+  margin-top: calc(var(--custom-guild-list-width) * 2);
+}
+
+/* Bottom HorizontalServerList. */
+
+.content__5e434 {
+  margin-top: unset;
+  margin-bottom: var(--custom-guild-list-width);
+}
+
+#app-mount .guilds__5e434 {
+  top: calc(100% + var(--custom-guild-list-width));
+}
+
+.container__5e434 > div[style]:not(.base__5e434) {
+  bottom: calc(var(--custom-guild-list-width) * 2);
+  top: unset;
+}
+.container__5e434 > div[style]:not(.base__5e434) .guilds__5e434 {
+  top: calc(100% + var(--custom-guild-list-width) * 2) !important;
+}
+.container__5e434 > div[style]:not(.base__5e434) + .base__5e434 .content__5e434 {
+  margin-top: unset;
+  margin-bottom: calc(var(--custom-guild-list-width) * 2);
+}
