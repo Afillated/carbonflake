@@ -23,10 +23,9 @@
       font-awesome
       openmoji-color
       twemoji-color-font
-      noto-fonts-emoji
+      noto-fonts-color-emoji
       noto-fonts
       noto-fonts-cjk-sans
-      noto-fonts-emoji
       source-han-sans
       source-han-serif
     ]
