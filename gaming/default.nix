@@ -10,6 +10,7 @@
       ./vesktop.nix
       ./emulators.nix
       ./modmanagers.nix
+      ./launchers.nix
     ];
 
 
