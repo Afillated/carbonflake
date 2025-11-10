@@ -16,7 +16,6 @@ in
   environment.systemPackages = with pkgs; [
     hyprland
     kitty
-    waybar
     libnotify
     networkmanagerapplet
     lxqt.pavucontrol-qt
@@ -27,7 +26,6 @@ in
     libqalculate
     hyprpaper
     hyprpolkitagent
-    # hyprsysteminfo
     hyprland-qt-support
     hyprcursor
     hyprshot
@@ -36,12 +34,12 @@ in
     wleave
     hyprlauncher
     grimblast
+    hyprlock
 
     bibata-cursors
     nwg-look
 
     xdg-utils
-    # shared-mine-info
     glib
     gtk3
     gtk4

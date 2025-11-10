@@ -12,7 +12,7 @@
 
 
 /* Bottom HorizontalServerList. Simply remove the comments surrounding the @import to enable it. */
-/* @import url("https://discordstyles.github.io/HorizontalServerList/bottomhsl.css"); */
+@import url("https://discordstyles.github.io/HorizontalServerList/bottomhsl.css");
 :root {
   --HSL-server-direction: column; /* Direction of the server list. | OPTIONS: column, column-reverse | DEFAULT: column */
   --HSL-server-alignment: center; /* Alignment of the server list. | OPTIONS: flex-start, center, flex-end | DEFAULT: flex-start */
