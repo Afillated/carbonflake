@@ -41,6 +41,9 @@
     hyprlauncher = {
       url = "github:hyprwm/hyprlauncher";
     };
+    mint-manager = {
+      url = "github:trumank/mint";
+    }; 
 
   };
 
