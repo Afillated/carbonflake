@@ -1,7 +1,3 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-#pp and in the NixOS manual (accessible by running ‘nixos-help’).
-
 {
   config,
   pkgs,
@@ -11,9 +7,7 @@
 
 {
   imports = [
-    # Include the results of the hardware scan.
     ./hardware-configuration.nix
-
     ../system
     ../apps
     ../gaming
@@ -22,7 +16,7 @@
   boot.kernelPackages = pkgs.linuxPackages_zen;
 
   networking.hostName = "carbon"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -30,10 +24,6 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-  # nixpkgs.config.permittedInsecurePackages = [
-  #   "broadcom-sta-6.30.223.271-57-6.16.12"
-  # ];
-
   # Set your time zone.
   time.timeZone = "Asia/Kolkata";
 
@@ -51,11 +41,7 @@
     LC_TELEPHONE = "en_IN";
     LC_TIME = "en_IN";
   };
-
-
- 
   
-  # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
     variant = "";
@@ -73,11 +59,8 @@
     packages = with pkgs; [ ];
   };
 
-  # Allow unfree packages
+
   nixpkgs.config.allowUnfree = true;
-  programs.firefox.enable = true;
-
-
 
   #Enable flakes
   nix.settings.experimental-features = [
@@ -85,18 +68,7 @@
     "flakes"
   ];
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    inputs.zen-browser.packages.${pkgs.system}.twilight
-    netbeans
-    pmbootstrap
-    android-tools
-    qbittorrent
-  ];
-
-
-  services.mysql = {
+   services.mysql = {
     enable = true;
     package = pkgs.mariadb;
     

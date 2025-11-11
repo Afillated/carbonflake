@@ -83,5 +83,7 @@ in
     ".config/mako".source = ../../config/mako;
     ".config/rofi".source = ../../config/rofi;
     ".config/hypr".source = ../../config/hypr;
+    ".config/kitty".source = ../../config/kitty;
+
   };
 }

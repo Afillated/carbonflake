@@ -13,6 +13,12 @@
     ./libreoffice.nix
     ./obs.nix
     ./notes.nix
+    ./browsers.nix
 
+  ];
+
+  environment.systemPackages = with pkgs; [
+    netbeans
+    qbittorrent
   ];
 }
