@@ -5,8 +5,8 @@
   ...
 }:
 {
-  environment.systemPackages = [
-    pkgs.vesktop
+  environment.systemPackages = with pkgs; [
+    vesktop
   ];
 
   hjem.users.carbon.files = {
