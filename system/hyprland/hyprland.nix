@@ -18,7 +18,6 @@ in
     kitty
     libnotify
     networkmanagerapplet
-    lxqt.pavucontrol-qt
     wl-clipboard
     clipse
     playerctl

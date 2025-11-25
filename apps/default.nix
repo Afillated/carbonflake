@@ -20,5 +20,6 @@
   environment.systemPackages = with pkgs; [
     netbeans
     qbittorrent
+    rquickshare
   ];
 }

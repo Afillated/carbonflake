@@ -4,6 +4,6 @@
     ./audio.nix
     ./nvidia.nix
     ./razer.nix
-    
+    ./bluetooth.nix    
   ];
 }
