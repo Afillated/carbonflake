@@ -1,7 +1,13 @@
-{comfig, pkgs, ... }: {
+{config, pkgs, ... }: {
   fileSystems."/games" = {
-    device = "/dev/disk/by-uuid/35367dd6-acc7-499f-aa6c-03eece5677ec";
+    device = "/dev/disk/by-uuid/fdfc0e35-5cbb-4aa6-9dee-e52308edbab7";
     fsType = "btrfs";
     options = [ "nofail" "compress=zstd" ];
+  };
+
+  services.btrfs.autoScrub = {
+    enable = true;
+    interval = "weekly";
+    fileSystems = ["/games"];
   };
 }
