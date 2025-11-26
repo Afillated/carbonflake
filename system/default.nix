@@ -8,12 +8,14 @@
 {
   imports = [
     ./hjem/hjem.nix
+    ./hjem/users.nix
     ./greetd/greetd.nix
     ./hardware
     ./hyprland
     ./shell
     ./boot
     ./quickshell/quickshell.nix
+    ./kde
 
   ];
 

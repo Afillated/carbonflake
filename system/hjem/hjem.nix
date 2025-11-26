@@ -17,6 +17,12 @@
       directory = "/home/carbon";
       user = "carbon";
     };
+
+    users.packet = {
+      enable = true;
+      directory = "/home/packet";
+      user = "packet";
+    };
     # You should probably also enable clobberByDefault at least for now.
     clobberByDefault = true;
   };
