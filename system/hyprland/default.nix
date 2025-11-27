@@ -3,6 +3,7 @@
     ./qt.nix
     ./hyprland.nix
     ./xdg.nix
+    ./gtk.nix
   ];
   
 }

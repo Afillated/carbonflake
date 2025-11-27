@@ -60,7 +60,7 @@ in
     HYPRCURSOR_SIZE = "24";
 
     # Additional cursor/theme variables for better app support
-    GTK_THEME = "Adwaita:dark"; # Helps with consistent theming
+    # GTK_THEME = "Adwaita:dark"; # Helps with consistent theming
     ELECTRON_OZONE_PLATFORM_HINT = "auto";
     NIXOS_OZONE_WL = "1";
   };

@@ -63,18 +63,6 @@
             inputs.hjem.nixosModules.default
           ];
         };
-
-        "surface" = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
-          specialArgs = { inherit inputs; };
-          modules = [
-            ./surface
-            inputs.spicetify-nix.nixosModules.default
-            inputs.hjem.nixosModules.default
-          ];
-        };
-
       };
-
     };
 }
