@@ -69,11 +69,6 @@
             "keyColor": "red"
         },
         {
-            "type": "icons",
-            "key": "│ ├󰀻",
-            "keyColor": "red"
-        },
-        {
             "type": "host",
             "key": "󰌢 PC",
             "keyColor": "red"
