@@ -27,9 +27,16 @@
     EDITOR = "hx";
   };
 
-  hjem.users.carbon.files = {
-    ".config/helix".source = ../../config/helix;
-    ".config/fastfetch".source = ../../config/fastfetch;
-
+  hjem.users.carbon = {
+    rum.programs.git.settings = {
+      user = {
+        email = "1583904+Afillated@users.noreply.github.com";
+        name = "Afillated";
+      };
+    };
+    files = {
+      ".config/helix".source = ../../config/helix;
+      ".config/fastfetch".source = ../../config/fastfetch;
+    };
   };
 }
