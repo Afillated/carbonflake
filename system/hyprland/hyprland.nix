@@ -60,7 +60,7 @@ in
     HYPRCURSOR_SIZE = "24";
 
     # Additional cursor/theme variables for better app support
-    # GTK_THEME = "Adwaita:dark"; # Helps with consistent theming
+    GTK_THEME = "Adwaita:dark"; # Helps with consistent theming
     ELECTRON_OZONE_PLATFORM_HINT = "auto";
     NIXOS_OZONE_WL = "1";
   };
@@ -83,6 +83,56 @@ in
     ".config/rofi".source = ../../config/rofi;
     ".config/hypr".source = ../../config/hypr;
     ".config/kitty".source = ../../config/kitty;
+    ".config/wleave/layout.json".text = ''
+            {
+          "buttons": [
+              {
+                  "label": "lock",
+                  "action": "hyprlock",
+                  "text": "Lock",
+                  "keybind": "l",
+                  "icon": "/nix/store/59yl53cynkwlhmydppp9rv6sx6sdcfdr-wleave-0.6.2/share/wleave/icons/lock.svg"
+              },
+              {
+                  "label": "hibernate",
+                  "action": "systemctl hibernate",
+                  "text": "Hibernate",
+                  "keybind": "h",
+                  "icon": "/nix/store/59yl53cynkwlhmydppp9rv6sx6sdcfdr-wleave-0.6.2/share/wleave/icons/hibernate.svg"
+              },
+              {
+                  "label": "logout",
+                  "action": "loginctl terminate-user $USER",
+                  "text": "Logout",
+                  "keybind": "e",
+                  "icon": "/nix/store/59yl53cynkwlhmydppp9rv6sx6sdcfdr-wleave-0.6.2/share/wleave/icons/logout.svg"
+              },
+              {
+                  "label": "shutdown",
+                  "action": "systemctl poweroff",
+                  "text": "Shutdown",
+                  "keybind": "s",
+                  "icon": "/nix/store/59yl53cynkwlhmydppp9rv6sx6sdcfdr-wleave-0.6.2/share/wleave/icons/shutdown.svg"
+              },
+              {
+                  "label": "suspend",
+                  "action": "systemctl suspend",
+                  "text": "Suspend",
+                  "keybind": "u",
+                  "icon": "/nix/store/59yl53cynkwlhmydppp9rv6sx6sdcfdr-wleave-0.6.2/share/wleave/icons/suspend.svg"
+              },
+              {
+                  "label": "reboot",
+                  "action": "systemctl reboot",
+                  "text": "Reboot",
+                  "keybind": "r",
+                  "icon": "/nix/store/59yl53cynkwlhmydppp9rv6sx6sdcfdr-wleave-0.6.2/share/wleave/icons/reboot.svg"
+              }
+          ]
+      }
+
+            
+    '';
 
   };
 }
