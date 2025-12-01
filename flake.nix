@@ -1,5 +1,5 @@
 {
-  description = "carbonflake type shit";
+  description = "A flake for all my systems, I want consistency and stability hence carbonflake(yeah I just made this shit up lol)";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
