@@ -32,4 +32,8 @@
       source-han-serif
     ]
     ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
+
+    environment.systemPackages = with pkgs; [
+      mission-center
+    ];
 }
