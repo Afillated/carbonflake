@@ -11,6 +11,7 @@
       # withOpenASAR = true; # can do this here too
       withVencord = true;
     })
+    element-desktop
   ];
 
   hjem.users.carbon.files = {
