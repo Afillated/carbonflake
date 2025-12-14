@@ -35,5 +35,10 @@
 
     environment.systemPackages = with pkgs; [
       mission-center
+      seahorse
     ];
+
+    # Security
+    services.gnome.gnome-keyring.enable = true;
+
 }
