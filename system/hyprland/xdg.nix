@@ -27,7 +27,7 @@
    #    env=TERMCMD=kitty
    #        EDITOR=hx
             
-   #  ''; -> this doesnt work lol, I can just use the default config but wanna make it popup yk
+   #  ''; 
     ".config/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh".source =../../config/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh;
   };
 
