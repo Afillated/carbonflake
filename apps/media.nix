@@ -9,6 +9,7 @@
     pkgs.vlc
     pkgs.sly
     pkgs.kdePackages.kdenlive
+    pkgs.krita
     
   ];
 }

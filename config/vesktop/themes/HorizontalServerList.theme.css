@@ -18,7 +18,7 @@
   --HSL-server-alignment: center; /* Alignment of the server list. | OPTIONS: flex-start, center, flex-end | DEFAULT: flex-start */
 }
 
-#app-mount .guilds__5e434 {
+#app-mount ._5e434347c823b592-guilds {
   transform-origin: top left;
   rotate: -90deg;
   height: 99vw !important;
