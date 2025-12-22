@@ -28,7 +28,6 @@ in
     hyprland-qt-support
     hyprcursor
     hyprshot
-    mako
     rofi
     wleave
     hyprlauncher
