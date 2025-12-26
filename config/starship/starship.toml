@@ -6,6 +6,7 @@ $directory\
 [](fg:#C4693D bg:#97352C)\
 $git_branch\
 $git_status\
+$nix_shell\
 [](fg:#97352C bg:#212121)\
 $time\
 $cmd_duration\
@@ -32,6 +33,11 @@ format = '[[ $symbol $branch ](fg:#000000 bg:#97352C)]($style)'
 [git_status]
 style = "bg:#394260"
 format = '[[($all_status$ahead_behind )](fg:#000000 bg:#97352C)]($style)'
+
+[nix_shell]
+disabled = false
+symbol = ""
+format = '[ via $symbol $state( \($name\))](fg:#000000 bg:#97352C)'
 
 [nodejs]
 symbol = ""
