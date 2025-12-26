@@ -20,5 +20,7 @@
   environment.systemPackages = with pkgs; [
     netbeans
     qbittorrent
+    # for app images
+    appimage-run
   ];
 }
