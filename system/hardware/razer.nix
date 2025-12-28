@@ -10,6 +10,8 @@
     polychromatic
     openrazer-daemon
     keyd
+    libratbag
+    piper
   ];
   users.users.carbon.extraGroups = [
     "openrazer"
