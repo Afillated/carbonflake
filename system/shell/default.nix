@@ -21,6 +21,7 @@
     btop
     fastfetch
     android-tools
+    bsd-finger
   ];
 
   environment.sessionVariables = {
