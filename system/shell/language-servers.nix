@@ -5,5 +5,6 @@
     jdt-language-server
     nil
     hyprlang
+    marksman
   ];
 }
