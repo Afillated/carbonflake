@@ -6,7 +6,5 @@
     })
   ];
 
-  hjem.users.carbon.files = {
-    ".config/yazi".source = ../../config/yazi;
-  };
+
 }

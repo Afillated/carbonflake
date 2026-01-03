@@ -1,7 +1,0 @@
-[plugin]
-deps = []
-
-[[flavor.deps]]
-use = "ficcdaf/ashen:ashen"
-rev = "c8eedd3"
-hash = "a48aa4d7140c52cdd14552039b632800"
