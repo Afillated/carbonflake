@@ -22,5 +22,6 @@
     qbittorrent
     # for app images
     appimage-run
+    inputs.akri.packages.${pkgs.system}.default
   ];
 }

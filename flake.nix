@@ -41,6 +41,10 @@
     hyprlauncher = {
       url = "github:hyprwm/hyprlauncher";
     };
+    akri = {
+      url = "github:hauntedcupoftea/akri";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

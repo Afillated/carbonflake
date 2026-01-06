@@ -40,7 +40,4 @@
 
     # Security
     services.gnome.gnome-keyring.enable = true;
-
-    powerManagement.cpuFreqGovernor = "performance";
-
 }
