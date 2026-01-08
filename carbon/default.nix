@@ -11,6 +11,7 @@
     ../system
     ../apps
     ../gaming
+    ../devlopment
   ];
 
   boot.kernelPackages = pkgs.linuxPackages_zen;

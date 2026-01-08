@@ -6,7 +6,6 @@
 }:
 {
   imports = [
-    ./language-servers.nix
     ./starship.nix
     ./yazi.nix
     ./nh.nix
