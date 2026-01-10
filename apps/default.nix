@@ -14,6 +14,7 @@
     ./obs.nix
     ./notes.nix
     ./browsers.nix
+    ./cloudflare.nix
 
   ];
 
