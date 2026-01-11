@@ -25,4 +25,6 @@
     appimage-run
     inputs.akri.packages.${pkgs.system}.default
   ];
+
+  programs.localsend.enable = true;
 }
