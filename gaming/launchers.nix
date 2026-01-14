@@ -9,5 +9,6 @@
     # List of additional system packages    
     extraPkgs = pkgs: [ ];
   })
+    winetricks
   ];
 }
