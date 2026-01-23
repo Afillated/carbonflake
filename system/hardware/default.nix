@@ -3,7 +3,8 @@
     ./filesystems.nix
     ./audio.nix
     ./nvidia.nix
-    ./razer.nix
     ./bluetooth.nix    
+    ./networking.nix
+    ./keyboard.nix
   ];
 }

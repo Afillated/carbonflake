@@ -18,13 +18,6 @@
 
   networking.hostName = "carbon"; # Define your hostname.
 
-
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-  # Enable networking
-  networking.networkmanager.enable = true;
   # Set your time zone.
   time.timeZone = "Asia/Kolkata";
 
@@ -42,11 +35,7 @@
     LC_TELEPHONE = "en_IN";
     LC_TIME = "en_IN";
   };
-  
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
+
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.carbon = {
@@ -60,7 +49,6 @@
     packages = with pkgs; [ ];
   };
 
-
   nixpkgs.config.allowUnfree = true;
 
   #Enable flakes
@@ -69,31 +57,13 @@
     "flakes"
   ];
 
-   services.mysql = {
+  services.mysql = {
     enable = true;
     package = pkgs.mariadb;
-    
+
   };
 
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
 
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
-
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
-
-  system.stateVersion = "25.05"; 
+  system.stateVersion = "25.05";
 
 }

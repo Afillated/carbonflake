@@ -17,6 +17,10 @@
     "openrazer"
     "keyd"
   ];
+  services.xserver.xkb = {
+    layout = "us";
+    variant = "";
+  };
 
   services.keyd = {
     enable = true;

@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     jdt-language-server
     nil
+    nixd
     hyprlang
     marksman
   ];
