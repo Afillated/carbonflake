@@ -38,13 +38,6 @@
       # you use directly and the one hjem-rum uses.
       inputs.hjem.follows = "hjem";
     };
-    hyprlauncher = {
-      url = "github:hyprwm/hyprlauncher";
-    };
-    akri = {
-      url = "github:hauntedcupoftea/akri";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs =

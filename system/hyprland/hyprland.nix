@@ -1,6 +1,5 @@
 { pkgs, inputs, ... }:
 let
-  hyprlauncher = inputs.hyprlauncher.packages.${pkgs.system}.default;
   grimblast = inputs.hyprland-contrib.packages.${pkgs.system}.grimblast;
 in
 
@@ -30,7 +29,6 @@ in
     hyprshot
     rofi
     wleave
-    hyprlauncher
     grimblast
     hyprlock
 
