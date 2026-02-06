@@ -8,7 +8,7 @@
   environment.systemPackages = [
     pkgs.vlc
     pkgs.sly
-    # pkgs.kdePackages.kdenlive
+    pkgs.kdePackages.kdenlive
     pkgs.krita
     
   ];

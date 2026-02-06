@@ -27,6 +27,12 @@
     EDITOR = "hx";
   };
 
+  programs.bash.enable = true;
+  programs.zoxide = {
+    enable = true;
+    enableBashIntegration = true;
+  };
+
   hjem.users.carbon = {
     rum.programs.git.settings = {
       user = {
