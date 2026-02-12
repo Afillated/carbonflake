@@ -30,14 +30,16 @@
       noto-fonts-cjk-sans
       source-han-sans
       source-han-serif
+      comfortaa
+      quicksand
     ]
     ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
 
-    environment.systemPackages = with pkgs; [
-      mission-center
-      seahorse
-    ];
+  environment.systemPackages = with pkgs; [
+    mission-center
+    seahorse
+  ];
 
-    # Security
-    services.gnome.gnome-keyring.enable = true;
+  # Security
+  services.gnome.gnome-keyring.enable = true;
 }

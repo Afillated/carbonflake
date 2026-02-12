@@ -20,7 +20,6 @@
 
   environment.systemPackages = with pkgs; [
     netbeans
-    zed-editor
     qbittorrent
     # for app images
     appimage-run
