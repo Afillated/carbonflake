@@ -69,9 +69,9 @@ in
   xdg.portal.enable = true;
 
   hjem.users.carbon.files = {
-    ".config/rofi".source = ../../config/rofi;
-    ".config/hypr".source = ../../config/hypr;
-    ".config/kitty".source = ../../config/kitty;
+    ".config/rofi".source = ../../../config/rofi;
+    ".config/hypr".source = ../../../config/hypr;
+    ".config/kitty".source = ../../../config/kitty;
     ".config/wleave/layout.json".text = ''
                   {
           "buttons": [

@@ -11,11 +11,12 @@
     ./hjem/users.nix
     ./greetd/greetd.nix
     ./hardware
-    ./hyprland
+    # ./hyprland
     ./shell
     ./boot
     ./quickshell/quickshell.nix
-    ./kde
+    # ./kde
+    ./WM
 
   ];
 
