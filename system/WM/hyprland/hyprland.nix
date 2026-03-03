@@ -28,7 +28,6 @@ in
     hyprcursor
     hyprshot
     rofi
-    wleave
     grimblast
     hyprlock
 
