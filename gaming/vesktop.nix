@@ -16,8 +16,6 @@
 
   hjem.users.carbon.files = {
     ".config/vesktop/themes".source = ../config/vesktop/themes;
-    ".config/vencord/themes".source = ../config/vesktop/themes;
-
   };
 
 }
