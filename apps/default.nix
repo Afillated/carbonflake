@@ -10,7 +10,7 @@
     ./spicetify.nix
     ./media.nix
     ./diskutils.nix
-    # ./libreoffice.nix
+    ./libreoffice.nix
     ./obs.nix
     ./notes.nix
     ./browsers.nix

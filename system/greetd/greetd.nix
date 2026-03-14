@@ -1,6 +1,9 @@
 { pkgs, inputs, ... }:
 {
-  services.greetd.enable = true;
+  services.greetd = {
+    enable = true;
+    greeterManagesPlymouth = true;
+  };
   programs.regreet.enable = true;
   # environment.systemPackages = with pkgs; [
   #   # qtgreet
@@ -14,14 +17,13 @@
   #   };
   # };
 
-
   #Something I wanted to try, trying to use hyprlock as the login screen in a way lol
-  # services.xserver.displayManager.lightdm.enable = false; 
-  # services.getty.autologinUser = "carbon"; 
+  # services.xserver.displayManager.lightdm.enable = false;
+  # services.getty.autologinUser = "carbon";
   # environment.loginShellInit = ''
   #   # Launch Hyprland on TTY1, return to TTY when exiting
   #   if [ "$(tty)" = "/dev/tty1" ]; then
-  #     uwsm start hyprland 
+  #     uwsm start hyprland
   #   fi
   # '';
 }
