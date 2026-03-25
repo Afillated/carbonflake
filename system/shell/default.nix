@@ -21,6 +21,7 @@
     fastfetch
     android-tools
     bsd-finger
+    libqalculate
   ];
 
   environment.sessionVariables = {

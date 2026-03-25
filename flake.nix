@@ -31,6 +31,9 @@
     matugen = {
       url = "github:/InioX/Matugen";
     };
+   hyprlauncher = {
+      url = "github:hyprwm/hyprlauncher";
+    };
   };
 
   outputs =

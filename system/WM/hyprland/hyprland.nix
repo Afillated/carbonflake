@@ -1,6 +1,7 @@
 { pkgs, inputs, ... }:
 let
   grimblast = inputs.hyprland-contrib.packages.${pkgs.system}.grimblast;
+  hyprlauncher = inputs.hyprlauncher.packages.${pkgs.system}.default;
 in
 
 {
@@ -21,7 +22,6 @@ in
     clipse
     playerctl
     hyprpicker
-    libqalculate
     hyprpaper
     hyprpolkitagent
     hyprland-qt-support
@@ -30,6 +30,9 @@ in
     rofi
     grimblast
     hyprlock
+    hypridle
+    hyprlauncher
+    hyprtoolkit
 
     bibata-cursors
     nwg-look
