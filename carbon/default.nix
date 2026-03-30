@@ -51,18 +51,11 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  #Enable flakes
+  # Enable flakes
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
   ];
-
-  services.mysql = {
-    enable = true;
-    package = pkgs.mariadb;
-
-  };
-
 
   system.stateVersion = "25.05";
 
