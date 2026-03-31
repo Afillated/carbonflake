@@ -30,6 +30,7 @@ in
     rofi
     grimblast
     hyprlock
+    mako
     hypridle
     hyprlauncher
     hyprtoolkit

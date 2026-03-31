@@ -10,6 +10,5 @@
     plasma-browser-integration
     konsole
     elisa
-    dolphin
   ];
 }
