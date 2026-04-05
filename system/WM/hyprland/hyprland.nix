@@ -1,7 +1,7 @@
 { pkgs, inputs, ... }:
 let
-  grimblast = inputs.hyprland-contrib.packages.${pkgs.system}.grimblast;
-  hyprlauncher = inputs.hyprlauncher.packages.${pkgs.system}.default;
+  grimblast = inputs.hyprland-contrib.packages.${pkgs.stdenv.hostPlatform.system}.grimblast;
+  hyprlauncher = inputs.hyprlauncher.packages.${pkgs.stdenv.hostPlatform.system}.default;
 in
 
 {

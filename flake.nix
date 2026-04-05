@@ -28,9 +28,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.hjem.follows = "hjem";
     };
-    matugen = {
-      url = "github:/InioX/Matugen";
-    };
    hyprlauncher = {
       url = "github:hyprwm/hyprlauncher";
     };

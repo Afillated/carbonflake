@@ -1,6 +1,6 @@
 {pkgs, inputs, ...}:
 let
- zen-twilight = inputs.zen-browser.packages.${pkgs.system}.twilight;
+ zen-twilight = inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.twilight;
 in
 {
   programs.firefox.enable = true;

@@ -31,8 +31,8 @@
     ".config/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh".source =../../../config/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh;
   };
 
-  environment.sessionVariables = {
-    GTK_USE_PORTAL = "1";
-  };
+  # environment.sessionVariables = {
+  #   GTK_USE_PORTAL = "1";
+  # }; breaks notifications
 
 }

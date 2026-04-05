@@ -22,6 +22,7 @@
     android-tools
     bsd-finger
     libqalculate
+    scooter
   ];
 
   environment.sessionVariables = {
