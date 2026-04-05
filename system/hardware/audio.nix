@@ -18,6 +18,7 @@
   environment.systemPackages = with pkgs; [
     pwvucontrol
     lxqt.pavucontrol-qt
+    alsa-utils
   ];
 
   # for ags and crackling noises
