@@ -4,6 +4,7 @@
     ./hyprland
     ./kde
     ./quickshell
+    ./niri
   ];
 
   environment.systemPackages = with pkgs; [

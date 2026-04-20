@@ -1,0 +1,115 @@
+input {
+    keyboard {
+        xkb {
+
+        }
+
+        numlock
+    }
+
+    touchpad {
+        // off
+        tap
+        // dwt
+        // dwtp
+        // drag false
+        // drag-lock
+        natural-scroll
+        // accel-speed 0.2
+        // accel-profile "flat"
+        // scroll-method "two-finger"
+        // disabled-on-external-mouse
+    }
+
+    mouse {
+        accel-speed -0.6
+        accel-profile "flat"
+    }
+
+    trackpoint {
+        // off
+        // natural-scroll
+        // accel-speed 0.2
+        // accel-profile "flat"
+        // scroll-method "on-button-down"
+        // scroll-button 273
+        // scroll-button-lock
+        // middle-emulation
+    }
+
+    warp-mouse-to-focus
+
+}
+
+environment {
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
+}
+
+layout {
+    gaps 16
+
+    center-focused-column "never"
+
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+
+    }
+
+
+
+    focus-ring {
+        off
+    }
+    border {
+        width 4
+        active-color "#550000"
+        inactive-color "#111111"
+        urgent-color "#9b0000"
+    }
+
+    shadow {
+        on
+        softness 30
+        spread 5
+        offset x=0 y=5
+        color "#0007"
+    }
+}
+
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+cursor {
+    xcursor-theme "Bibata-Modern-Classic"
+    xcursor-size 20
+
+    hide-when-typing
+    hide-after-inactive-ms 1000
+}
+
+screenshot-path null
+
+
+overview {
+    zoom 0.75
+    backdrop-color "#331111"
+    workspace-shadow {
+        softness 40
+        spread 10
+        offset x=0 y=10
+        color "#00000050"
+    }
+}
+
+gestures {
+    hot-corners {
+        top-right
+    }
+}
+
+spawn-at-startup "qs"
+spawn-at-startup "hyprpaper"
