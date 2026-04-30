@@ -28,7 +28,7 @@
    #        EDITOR=hx
             
    #  ''; 
-    ".config/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh".source =../../../config/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh;
+    ".config/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh".source =../../config/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh;
   };
 
   # environment.sessionVariables = {

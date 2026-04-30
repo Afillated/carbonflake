@@ -28,8 +28,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.hjem.follows = "hjem";
     };
-   hyprlauncher = {
+    hyprlauncher = {
       url = "github:hyprwm/hyprlauncher";
+    };
+    qml-niri = {
+      url = "github:imiric/qml-niri/main";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.quickshell.follows = "quickshell";
     };
   };
 

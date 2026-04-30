@@ -22,7 +22,7 @@ input {
     }
 
     mouse {
-        accel-speed -0.6
+        accel-speed -0.4
         accel-profile "flat"
     }
 
@@ -85,7 +85,7 @@ hotkey-overlay {
 
 cursor {
     xcursor-theme "Bibata-Modern-Classic"
-    xcursor-size 20
+    xcursor-size 24
 
     hide-when-typing
     hide-after-inactive-ms 1000
@@ -111,5 +111,5 @@ gestures {
     }
 }
 
-spawn-at-startup "qs"
+spawn-at-startup "qs -c ~/projects/niri-dots/quickshell/"
 spawn-at-startup "hyprpaper"
