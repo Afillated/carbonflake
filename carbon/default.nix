@@ -15,6 +15,7 @@
   ];
 
   boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.initrd.supportedFilesystems = [ "btrfs" ];
 
   networking.hostName = "carbon"; # Define your hostname.
 

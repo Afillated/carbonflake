@@ -16,7 +16,7 @@
     git
     tree
     jmtpfs
-    yt-dlp
+    # yt-dlp
     btop
     fastfetch
     android-tools
