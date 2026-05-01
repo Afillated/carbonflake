@@ -7,7 +7,7 @@
 
 {
   imports = [
-    ./spicetify.nix
+    # ./spicetify.nix
     ./media.nix
     ./diskutils.nix
     ./libreoffice.nix
