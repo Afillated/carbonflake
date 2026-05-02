@@ -7,7 +7,7 @@
     nixd
     hyprlang
     marksman
-    rustup
     rust-analyzer
+    rustc
   ];
 }
