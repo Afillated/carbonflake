@@ -5,13 +5,14 @@
     ./virtualisation.nix
   ];
 
+  programs.direnv = {
+    enable = true;
+    enableBashIntegration = true;
+  };
+  
   hjem.users.carbon.rum.programs = {
     zed= {
       enable = true;
-      # settings = {
-      #   theme = "Ashen";
-      #   helix_mode = true;
-      # };
     };
   };
   
