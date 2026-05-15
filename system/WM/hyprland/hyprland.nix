@@ -2,19 +2,22 @@
 let
   grimblast = inputs.hyprland-contrib.packages.${pkgs.stdenv.hostPlatform.system}.grimblast;
   hyprlauncher = inputs.hyprlauncher.packages.${pkgs.stdenv.hostPlatform.system}.default;
+  hyprland = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+  hypr-xdg = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
 in
 
 {
 
   programs.hyprland = {
     enable = true;
-    package = pkgs.hyprland;
+    # package = pkgs.hyprland;
+    package = hyprland;
     withUWSM = true;
     xwayland.enable = true;
+    portalPackage = hypr-xdg;
   };
 
   environment.systemPackages = with pkgs; [
-    hyprland
     hyprpicker
     hyprpaper
     hyprpolkitagent
@@ -37,6 +40,11 @@ in
   };
 
   hjem.users.carbon.files = {
-    ".config/hypr".source = ../../../config/hypr;
+    ".config/hypr/hyprland.lua".source = ./hyprland.lua;
+    ".config/hypr/rules.lua".source = ./rules.lua;
+    ".config/hypr/binds.lua".source = ./binds.lua;
+    ".config/hypr/hyprpaper.conf".source = ./hyprpaper.conf;
+    ".config/hypr/hypridle.conf".source = ./hypridle.conf;
+    ".config/hypr/wallpapers".source = ./wallpapers;
   };
 }
