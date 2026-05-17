@@ -44,7 +44,7 @@
   };
 
   fileSystems."/nix" = {
-    device = "/dev/disk/by-uuid/2bc9fa33-961a-462b-88f6-31a39509d9d8";
+    device = "/dev/disk/by-uuid/f547c0f7-f4de-4be4-a569-251040558f5e";
     fsType = "btrfs";
     options = [
       "compress=zstd"
