@@ -1,5 +1,6 @@
 require("binds")
 require("rules")
+local wallust = require("colors")
 
 
 ------------------
@@ -72,7 +73,7 @@ hl.config({
     border_size      = 2,
 
     col              = {
-      active_border   = "rgb(960000)",
+      active_border   = wallust.accent,
       inactive_border = "rgba(000000aa)",
     },
 
@@ -199,7 +200,7 @@ hl.config({
 
     follow_mouse  = 1,
 
-    sensitivity   = -0.5, -- -1.0 - 1.0, 0 means no modification.
+    sensitivity   = -0.9, -- -1.0 - 1.0, 0 means no modification.
 
     touchpad      = {
       natural_scroll = false,

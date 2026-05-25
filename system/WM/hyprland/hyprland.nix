@@ -2,19 +2,21 @@
 let
   grimblast = inputs.hyprland-contrib.packages.${pkgs.stdenv.hostPlatform.system}.grimblast;
   hyprlauncher = inputs.hyprlauncher.packages.${pkgs.stdenv.hostPlatform.system}.default;
-  hyprland = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-  hypr-xdg = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+  # for hyprland-git
+  # hyprland = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+  # hypr-xdg = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
 in
 
 {
 
   programs.hyprland = {
     enable = true;
-    # package = pkgs.hyprland;
-    package = hyprland;
+    package = pkgs.hyprland;
+    # for hyprland-git
+    # package = hyprland;
+    # portalPackage = hypr-xdg;
     withUWSM = true;
     xwayland.enable = true;
-    portalPackage = hypr-xdg;
   };
 
   environment.systemPackages = with pkgs; [

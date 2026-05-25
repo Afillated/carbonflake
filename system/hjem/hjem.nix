@@ -1,6 +1,5 @@
 {
   inputs,
-  config,
   pkgs,
   ...
 }:
@@ -22,6 +21,12 @@
       enable = true;
       directory = "/home/packet";
       user = "packet";
+      rum.misc.gtk = {
+        enable = true;
+        settings = {
+          theme-name = "Colloid-Dark";
+        };
+      };
     };
     # You should probably also enable clobberByDefault at least for now.
     clobberByDefault = true;

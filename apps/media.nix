@@ -10,6 +10,7 @@
     sly
     kdePackages.kdenlive
     krita
+    amberol
     (mpv.override {
       scripts = [
         mpvScripts.mpv-discord
