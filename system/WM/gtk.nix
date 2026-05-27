@@ -9,10 +9,13 @@
     nwg-look
     gtk3
     gtk4
-    glib
     gsettings-desktop-schemas
     colloid-gtk-theme
     colloid-icon-theme
+    glib
+    # Additional packages for better cursor support
+    gsettings-desktop-schemas # For GTK cursor theme support
+    adwaita-icon-theme # Fallback icon theme
   ];
 
   programs.dconf.enable = true;

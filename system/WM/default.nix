@@ -21,10 +21,6 @@
     # mako
     bibata-cursors
     xdg-utils
-    glib
-    # Additional packages for better cursor support
-    gsettings-desktop-schemas # For GTK cursor theme support
-    adwaita-icon-theme # Fallback icon theme
   ];
 
   environment.sessionVariables = {
@@ -40,6 +36,13 @@
 
   hjem.users.carbon.files = {
     ".config/rofi".source = ../../config/rofi;
-    ".config/kitty".source = ../../config/kitty;
+    # ".config/kitty/kitty.conf".source = ../../config/kitty/kitty.conf;
+    ".config/kitty/kitty.conf".text = ''
+      include colors.conf
+      background_opacity 1
+      scrollbar_handle_opacity 0
+      scrollbar never
+      window_margin_width 0.0
+    '';
   };
 }
