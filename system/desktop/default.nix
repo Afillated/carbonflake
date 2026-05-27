@@ -5,8 +5,8 @@
     ./kde
     ./quickshell
     ./niri
-    ./gtk.nix
     ./xdg.nix
+    ./theming
   ];
 
   environment.systemPackages = with pkgs; [
@@ -36,7 +36,6 @@
 
   hjem.users.carbon.files = {
     ".config/rofi".source = ../../config/rofi;
-    # ".config/kitty/kitty.conf".source = ../../config/kitty/kitty.conf;
     ".config/kitty/kitty.conf".text = ''
       include colors.conf
       background_opacity 1

@@ -13,8 +13,7 @@
     ./hardware
     ./shell
     ./boot
-    ./WM
-
+    ./desktop
   ];
 
   fonts.packages =

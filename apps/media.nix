@@ -13,12 +13,12 @@
     amberol
     (mpv.override {
       scripts = [
-        mpvScripts.mpv-discord
         mpvScripts.mpv-playlistmanager
         mpvScripts.memo
         mpvScripts.mpris
         mpvScripts.modernz
       ];
     })
+    mprisence
   ];
 }
