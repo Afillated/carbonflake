@@ -1,7 +1,7 @@
 {pkgs, inputs, ...}: {
-# kinda barebones lol
 	hardware.bluetooth = {
 		enable = true;
+		powerOnBoot = true;
 	};
 
 	services.blueman = {

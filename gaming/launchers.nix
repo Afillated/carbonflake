@@ -5,5 +5,6 @@
     prismlauncher
     winetricks
     mcpelauncher-ui-qt
+    heroic
   ];
 }

@@ -51,6 +51,17 @@ hl.window_rule({
 })
 
 hl.window_rule({
+  name       = "float-polkit",
+  match      = { class = "org.quickshell", title = "Polkit", },
+
+  float      = true,
+  size       = { "(monitor_w*0.25)", "(monitor_h*0.25)" },
+  max_size   = { "(monitor_w*0.25)", "(monitor_h*0.25)" },
+  min_size   = { "(monitor_w*0.25)", "(monitor_h*0.25)" },
+  dim_around = true,
+})
+
+hl.window_rule({
   name    = "blur-kitty",
   match   = { class = "kitty" },
   opacity = 0.85,
