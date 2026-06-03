@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-26.05";
     nix-gaming.url = "github:fufexan/nix-gaming";
     hyprland.url = "github:hyprwm/Hyprland";
     zen-browser = {
@@ -44,6 +45,7 @@
       nixpkgs,
       zen-browser,
       nh,
+      nixpkgs-stable,
       ...
     }@inputs:
     {
@@ -56,6 +58,16 @@
             ./carbon
             inputs.spicetify-nix.nixosModules.default
             inputs.hjem.nixosModules.default
+            (
+              { ... }:
+              {
+                nixpkgs.overlays = [
+                  (final: prev: {
+                    kitty = nixpkgs-stable.legacyPackages.${prev.system}.kitty;
+                  })
+                ];
+              }
+            )
           ];
         };
       };

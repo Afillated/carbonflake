@@ -7,7 +7,7 @@
 
 {
   environment.systemPackages = [
-    pkgs.logseq
+    # pkgs.logseq
     pkgs.obsidian
   ];
 }
