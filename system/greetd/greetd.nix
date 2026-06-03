@@ -16,10 +16,21 @@
   #   wlgreet
   # ];
 
-  # # services.greetd.settings = {
+  # services.greetd.settings = {
   #   default_session = {
-  #     command = "Hyprland --config /etc/greetd/hyprland-greet.conf";
+  #     command = "start-hyprland -- --config /etc/greetd/hypr/hyprland-greet.lua";
   #   };
   # };
 
+  # environment.etc."greetd/hypr/hyprland-greet.lua".source = ./hypr/hyprland-greet.lua;
+  # environment.etc."greetd/hypr/greetpaper.conf".text = ''
+  #   splash = false
+  #   wallpaper {
+  #   	monitor =
+  #   	path = /etc/greetd/hypr/wallpaper.png
+  #   	fit_mode = file
+  #   } 
+  # '';
+  # environment.etc."greetd/hypr/wallpaper.png".source = ../desktop/hyprland/wallpapers/wallpaper.png;
+  # environment.etc."greetd/quickshell".source = ./greeter;
 }
