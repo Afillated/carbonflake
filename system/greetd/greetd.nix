@@ -11,10 +11,6 @@
       package = pkgs.colloid-gtk-theme;
     };
   };
-  # environment.systemPackages = with pkgs; [
-  #   # qtgreet
-  #   wlgreet
-  # ];
 
   # services.greetd.settings = {
   #   default_session = {
@@ -22,15 +18,15 @@
   #   };
   # };
 
-  # environment.etc."greetd/hypr/hyprland-greet.lua".source = ./hypr/hyprland-greet.lua;
-  # environment.etc."greetd/hypr/greetpaper.conf".text = ''
-  #   splash = false
-  #   wallpaper {
-  #   	monitor =
-  #   	path = /etc/greetd/hypr/wallpaper.png
-  #   	fit_mode = file
-  #   } 
-  # '';
-  # environment.etc."greetd/hypr/wallpaper.png".source = ../desktop/hyprland/wallpapers/wallpaper.png;
-  # environment.etc."greetd/quickshell".source = ./greeter;
+  environment.etc."greetd/hypr/hyprland-greet.lua".source = ./hypr/hyprland-greet.lua;
+  environment.etc."greetd/hypr/greetpaper.conf".text = ''
+    splash = false
+    wallpaper {
+    	monitor =
+    	path = /etc/greetd/hypr/wallpaper.png
+    	fit_mode = file
+    } 
+  '';
+  environment.etc."greetd/hypr/wallpaper.png".source = ../desktop/hyprland/wallpapers/wallpaper.png;
+  environment.etc."greetd/quickshell".source = ./greeter;
 }

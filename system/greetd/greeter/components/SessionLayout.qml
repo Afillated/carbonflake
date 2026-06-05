@@ -13,10 +13,10 @@ RowLayout {
     Rectangle {
         id: shutButton
         radius: sessionLayout.butRadius
-        color: area2.containsMouse ? "#CC111111" : "#55000000"
+        color: area2.containsMouse ? "#66010101" : "transparent"
         Behavior on color {
             ColorAnimation {
-                duration: 250
+                duration: 200
             }
         }
         MouseArea {
@@ -27,22 +27,22 @@ RowLayout {
             onClicked: Quickshell.execDetached(["systemctl", "poweroff"])
         }
         border {
-            color: area2.containsMouse ? "#CC960000" : "#111111"
+            color: area2.containsMouse ? "#33967373" : "transparent"
             width: 2
             Behavior on color {
                 ColorAnimation {
-                    duration: 250
+                    duration: 200
                 }
             }
         }
         Text {
             text: "󰐥"
-            color: area2.containsMouse || shutButton.focus ? "#960000" : "#967373"
+            color: area2.containsMouse ? "#960000" : "#967373"
             anchors.centerIn: parent
             font.pixelSize: sessionLayout.fontSize
             Behavior on color {
                 ColorAnimation {
-                    duration: 250
+                    duration: 200
                 }
             }
         }
@@ -52,10 +52,10 @@ RowLayout {
     Rectangle {
         id: restartButton
         radius: sessionLayout.butRadius
-        color: area3.containsMouse ? "#CC111111" : "#55000000"
+        color: area3.containsMouse ? "#6010101" : "transparent"
         Behavior on color {
             ColorAnimation {
-                duration: 250
+                duration: 200
             }
         }
         MouseArea {
@@ -66,23 +66,23 @@ RowLayout {
             onClicked: Quickshell.execDetached(["systemctl", "reboot"])
         }
         border {
-            color: area3.containsMouse ? "#CC960000" : "#111111"
+            color: area3.containsMouse ? "#33967373" : "transparent"
             width: 2
             Behavior on color {
                 ColorAnimation {
-                    duration: 250
+                    duration: 200
                 }
             }
         }
 
         Text {
             text: "󰜉"
-            color: area3.containsMouse || restartButton.focus ? "#960000" : "#967373"
+            color: area3.containsMouse ? "#960000" : "#967373"
             anchors.centerIn: parent
             font.pixelSize: sessionLayout.fontSize
             Behavior on color {
                 ColorAnimation {
-                    duration: 250
+                    duration: 200
                 }
             }
         }

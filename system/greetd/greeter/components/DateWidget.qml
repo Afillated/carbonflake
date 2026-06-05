@@ -6,6 +6,7 @@ import qs.services
 Text {
     id: date
     text: Time.date
+    // text: Greeterd.user
     color: "#967373"
     property real size
     font {
