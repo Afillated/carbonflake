@@ -47,6 +47,11 @@ Singleton {
         }
     }
 
+    function launch(command) {
+        if (ready)
+            Greetd.launch(command);
+    }
+
     Connections {
         target: Greetd
         function onAuthMessage(message, error, responseRequired, echoResponse) {
@@ -59,7 +64,7 @@ Singleton {
             }
             root.responseReq = responseRequired;
             root.showResponse = echoResponse;
-            root.authMessage()
+            root.authMessage();
         }
 
         function onAuthFailure(mess) {
@@ -67,14 +72,14 @@ Singleton {
             root.isWorking = false;
             let timer = Qt.createQmlObject('import QtQuick 2.0; Timer { interval: 1000; repeat: false }', root);
             timer.triggered.connect(() => {
-                root.authFailed(); 
+                root.authFailed();
                 timer.destroy();
             });
             timer.start();
         }
         function onReadyToLaunch() {
             root.isWorking = false;
-            root.readyToLaunch()
+            root.readyToLaunch();
         }
     }
 }

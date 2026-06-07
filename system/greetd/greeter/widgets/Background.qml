@@ -167,14 +167,28 @@ Scope {
                 function onReadyToLaunch() {
                     screen2.state = "";
                     Greeterd.resetMessages();
+                    if (Sessions.currentSession) {
+                        const cmd = Sessions.currentSession.exec;
+                        console.log("Launching:", cmd);
+                        Greeterd.launch(cmd.split(' '));
+                    } else {
+                        console.error("No session selected or sessions still loading!");
+                    }
                 }
             }
             Text {
                 id: placeholder
-                text: "Ready to launch"
+                text: "Launching ..."
                 anchors.centerIn: parent
-                visible: Greeterd.ready
-                color: "white"
+                opacity: Greeterd.ready ? 1 : 0
+                visible: opacity > 0
+                Behavior on opacity {
+                    NumberAnimation {
+                        duration: 200
+                        easing.type: Easing.OutQuad
+                    }
+                }
+                color: "#967373"
             }
         }
     }

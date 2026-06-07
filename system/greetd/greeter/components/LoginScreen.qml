@@ -35,7 +35,6 @@ ClippingRectangle {
     Label {
         id: username
         text: login.username
-        // text: "hello"
         color: "#967373"
         renderType: Text.NativeRendering
         anchors {
@@ -107,7 +106,7 @@ ClippingRectangle {
         Text {
             id: incorrect
             anchors.centerIn: parent
-            text: Greeterd.majError 
+            text: Greeterd.majError
             color: "#967373"
 
             Connections {
@@ -216,6 +215,30 @@ ClippingRectangle {
                 to: 0
                 easing.type: Easing.OutCirc
             }
+        }
+    }
+
+    SessionMenu {
+        id: sessionMenu
+        opacity: login.butVisible ? 1 : 0
+        Behavior on opacity {
+            NumberAnimation {
+                duration: 100
+                easing.type: Easing.OutQuad
+            }
+        }
+        visible: opacity > 0
+        delegateHeight: login.screenHeight * 0.04
+        fontSize: delegateHeight * 0.6
+        anchors {
+            top: parent.top
+            topMargin: login.screenHeight/1.3
+            left: parent.left
+            leftMargin: passwordArea.implicitHeight
+            bottom: parent.bottom
+            bottomMargin: passwordArea.implicitHeight
+            right: closeButton.left
+            rightMargin: passwordArea.implicitWidth*1.4
         }
     }
 }
