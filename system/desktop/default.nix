@@ -9,7 +9,6 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    wallust
     kitty
     libnotify
     networkmanagerapplet
@@ -17,7 +16,7 @@
     clipse
     playerctl
     rofi
-    # mako
+    kdePackages.dolphin
     bibata-cursors
     xdg-utils
   ];

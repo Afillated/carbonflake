@@ -13,6 +13,7 @@
 
   environment.systemPackages = with pkgs; [
     nvtopPackages.nvidia
+    brightnessctl
   ];
 
   # Load nvidia driver for Xorg and Wayland
