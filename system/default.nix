@@ -8,7 +8,6 @@
 {
   imports = [
     ./hjem/hjem.nix
-    ./hjem/users.nix
     ./greetd/greetd.nix
     ./hardware
     ./shell

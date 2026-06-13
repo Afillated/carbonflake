@@ -2,7 +2,6 @@
 {
   imports = [
     ./hyprland
-    ./kde
     ./quickshell
     ./niri
     ./xdg.nix
