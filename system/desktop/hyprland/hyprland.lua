@@ -102,11 +102,11 @@ hl.config({
     },
 
     blur             = {
-      enabled            = true,
-      size               = 3,
-      passes             = 2,
-      vibrancy           = 0.1696,
-      popups             = true,
+      enabled  = true,
+      size     = 3,
+      passes   = 2,
+      vibrancy = 0.1696,
+      popups   = true,
     },
   },
 
@@ -185,7 +185,11 @@ hl.config({
   },
 })
 
-
+hl.config({
+  xwayland = {
+    force_zero_scaling = true
+  }
+})
 ---------------
 ---- INPUT ----
 ---------------

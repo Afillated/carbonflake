@@ -1,4 +1,4 @@
-{pkgs, inputs, ...}: {
+{ pkgs, inputs, ... }: {
   programs = {
     steam = {
       enable = true;
@@ -17,10 +17,6 @@
     gamescope = {
       enable = true;
       capSysNice = true;
-      args = [
-        "--backend sdl"
-        # "--rt"
-      ];
     };
   };
   environment.systemPackages = with pkgs; [
