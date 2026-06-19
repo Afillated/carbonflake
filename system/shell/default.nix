@@ -16,7 +16,7 @@
     git
     tree
     jmtpfs
-    # yt-dlp
+    yt-dlp
     btop
     fastfetch
     android-tools
@@ -33,13 +33,6 @@
   programs.zoxide = {
     enable = true;
     enableBashIntegration = true;
-  };
-
-  programs.fish = {
-    enable = true;
-    interactiveShellInit = ''
-      set fish_greeting # Disable greeting
-    '';
   };
 
   hjem.users.carbon = {

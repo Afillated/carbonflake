@@ -55,9 +55,9 @@ hl.window_rule({
   match      = { class = "org.quickshell", title = "Polkit", },
 
   float      = true,
-  size       = { "(monitor_w*0.25)", "(monitor_h*0.25)" },
-  max_size   = { "(monitor_w*0.25)", "(monitor_h*0.25)" },
-  min_size   = { "(monitor_w*0.25)", "(monitor_h*0.25)" },
+  size       = { "(monitor_w*0.4)", "(monitor_h*0.4)" },
+  max_size   = { "(monitor_w*0.4)", "(monitor_h*0.4)" },
+  min_size   = { "(monitor_w*0.4)", "(monitor_h*0.4)" },
   dim_around = true,
 })
 

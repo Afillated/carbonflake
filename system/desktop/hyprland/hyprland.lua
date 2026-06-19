@@ -207,7 +207,8 @@ hl.config({
     sensitivity   = -0.9, -- -1.0 - 1.0, 0 means no modification.
 
     touchpad      = {
-      natural_scroll = false,
+      natural_scroll = true,
+      scroll_factor = 0.2,
     },
     accel_profile = " flat",
   },
@@ -216,5 +217,25 @@ hl.config({
 hl.gesture({
   fingers = 3,
   direction = "horizontal",
+  workspace_swipe_distance = 150,
   action = "workspace"
+})
+
+hl.gesture({
+  fingers = 3,
+  direction = "up",
+  workspace_swipe_distance = 80,
+  action = function()
+    hl.dsp.workspace.toggle_special("magic")
+  end
+})
+
+
+-----------------
+---- Devices ----
+-----------------
+
+hl.device({
+  name = "syna2ba6:00-06cb:cefe-touchpad",
+  sensitivity = -0.5
 })
