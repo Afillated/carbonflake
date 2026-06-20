@@ -226,7 +226,16 @@ hl.gesture({
   direction = "up",
   workspace_swipe_distance = 80,
   action = function()
-    hl.dsp.workspace.toggle_special("magic")
+    hl.dispatch(hl.dsp.workspace.toggle_special("magic"))
+  end
+})
+
+hl.gesture({
+  fingers = 3,
+  direction = "down",
+  workspace_swipe_distance = 80,
+  action = function()
+    hl.dispatch(hl.dsp.workspace.toggle_special("magic"))
   end
 })
 

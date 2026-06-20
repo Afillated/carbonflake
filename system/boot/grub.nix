@@ -1,4 +1,4 @@
-{pkgs, inputs, ...}: {
+{ pkgs, inputs, ... }: {
   boot = {
     # Enable GRUB
     loader.grub = {
@@ -9,12 +9,9 @@
       useOSProber = true; # Detect Windows
       default = "saved"; # Default to last booted OS
       configurationLimit = 8;
-     };
-
-
+      theme = inputs.grub-themes.packages.${pkgs.system}.nixos;
+    };
     loader.efi.canTouchEfiVariables = true;
-
-
     # Add NTFS support
     supportedFilesystems = [ "ntfs" ];
   };

@@ -9,13 +9,14 @@
     plymouth = {
       enable = true;
     };
-
-    initrd.kernelModules = [
-      "nvidia"
-      "nvidia_modeset"
-      "nvidia_uvm"
-      "nvidia_drm"
+    # Enable "Silent boot"
+    consoleLogLevel = 3;
+    initrd.verbose = false;
+    kernelParams = [
+      "quiet"
+      "rd.udev.log_level=3"
+      "rd.systemd.show_status=auto"
     ];
-
   };
+  hardware.amdgpu.initrd.enable = true;
 }

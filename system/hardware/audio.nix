@@ -17,7 +17,6 @@
 
   environment.systemPackages = with pkgs; [
     pwvucontrol
-    lxqt.pavucontrol-qt
     alsa-utils
   ];
 

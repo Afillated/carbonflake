@@ -36,6 +36,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.quickshell.follows = "quickshell";
     };
+    grub-themes = {
+      url = "github:jeslie0/nixos-grub-themes";
+    };
   };
 
   outputs =

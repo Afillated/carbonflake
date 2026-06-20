@@ -37,7 +37,6 @@
     LC_TIME = "en_IN";
   };
 
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.carbon = {
     isNormalUser = true;
@@ -59,5 +58,4 @@
   ];
 
   system.stateVersion = "25.05";
-
 }
