@@ -9,7 +9,7 @@
       useOSProber = true; # Detect Windows
       default = "saved"; # Default to last booted OS
       configurationLimit = 8;
-      theme = inputs.grub-themes.packages.${pkgs.system}.nixos;
+      theme = inputs.grub-themes.packages.${pkgs.stdenv.hostPlatform.system}.nixos;
     };
     loader.efi.canTouchEfiVariables = true;
     # Add NTFS support

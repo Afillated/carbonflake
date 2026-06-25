@@ -60,16 +60,6 @@
             ./carbon
             inputs.spicetify-nix.nixosModules.default
             inputs.hjem.nixosModules.default
-            (
-              { ... }:
-              {
-                nixpkgs.overlays = [
-                  (final: prev: {
-                    kitty = nixpkgs-stable.legacyPackages.${prev.system}.kitty;
-                  })
-                ];
-              }
-            )
           ];
         };
       };

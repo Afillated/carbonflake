@@ -33,7 +33,6 @@
             capslock = "esc";
             leftmeta = "leftalt";
             leftalt = "leftmeta";
-
           };
           otherlayer = { };
         };

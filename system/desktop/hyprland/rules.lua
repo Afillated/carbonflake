@@ -51,6 +51,17 @@ hl.window_rule({
 })
 
 hl.window_rule({
+  name       = "float-screen-picker",
+  match      = {  title = "Select what to share", },
+
+  float      = true,
+  size       = { "(monitor_w*0.5)", "(monitor_h*0.6)" },
+  max_size   = { "(monitor_w*0.5)", "(monitor_h*0.6)" },
+  min_size   = { "(monitor_w*0.5)", "(monitor_h*0.6)" },
+  dim_around = true,
+})
+
+hl.window_rule({
   name       = "float-polkit",
   match      = { class = "org.quickshell", title = "Polkit", },
 

@@ -27,6 +27,7 @@ hl.bind(mainMod .. " + I", hl.dsp.exec_cmd("kitty -e btop --force-utf"))
 hl.bind(mainMod .. " + F11", hl.dsp.window.fullscreen({ "maximised", "toggle" }))
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("kitty -e yazi"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("hyprpicker -a -f hex"))
+hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("qs ipc call mainBar toggle"))
 hl.bind(mainMod .. " + G", hl.dsp.window.center({ window = "activewindow" }))
 
 -- Move focus with mainMod + arrow keys
