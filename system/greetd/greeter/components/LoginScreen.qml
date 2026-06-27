@@ -75,21 +75,22 @@ ClippingRectangle {
         }
         TextInput {
             id: passwordInput
-            anchors.fill: parent
-            anchors.margins: 10
+            anchors {
+                centerIn: parent
+            }
             focus: true
             color: "#967373"
             text: ""
             enabled: Greeterd.authing
             horizontalAlignment: Text.AlignHCenter
             cursorVisible: false
-            font.pixelSize: login.screenHeight * 0.018
+            font.pixelSize: login.screenHeight * 0.02
             echoMode: Greeterd.showResponse ? TextInput.Normal : TextInput.Password
             onAccepted: {
                 Greeterd.respond(text);
                 passwordInput.text = "";
             }
-            font.family: "Firacode Mono Nerd Font"
+            font.family: "Firacode NerdFont"
             selectionColor: "#88960000"
             selectedTextColor: "#967373"
             renderType: Text.NativeRendering
@@ -106,8 +107,9 @@ ClippingRectangle {
         Text {
             id: incorrect
             anchors.centerIn: parent
-            text: Greeterd.majError
+            text: "Incorrect Password"
             color: "#967373"
+            opacity: 0
 
             Connections {
                 target: Greeterd
@@ -122,7 +124,16 @@ ClippingRectangle {
                     target: incorrect
                     property: "opacity"
                     duration: 150
+                    from: 0
                     to: 0.8
+                    easing.type: Easing.InCirc
+                }
+                NumberAnimation {
+                    target: incorrect
+                    property: "opacity"
+                    duration: 150
+                    from: 0.8
+                    to: 0
                     easing.type: Easing.InCirc
                 }
             }
@@ -183,6 +194,7 @@ ClippingRectangle {
         anchors.centerIn: parent
         text: Greeterd.minError
         color: "#967373"
+        opacity: 0
         anchors {
             top: passwordArea.bottom
             topMargin: login.screenHeight / 10
@@ -231,14 +243,14 @@ ClippingRectangle {
         delegateHeight: login.screenHeight * 0.04
         fontSize: delegateHeight * 0.6
         anchors {
-            top: parent.top
-            topMargin: login.screenHeight/1.3
             left: parent.left
             leftMargin: passwordArea.implicitHeight
             bottom: parent.bottom
             bottomMargin: passwordArea.implicitHeight
             right: closeButton.left
             rightMargin: passwordArea.implicitWidth*1.4
+            top: parent.top
+            topMargin: login.screenHeight - (sessionMenu.height + passwordArea.implicitHeight)
         }
     }
 }

@@ -14,13 +14,16 @@ ClippingRectangle {
         color: "#33967373"
         width: 1
     }
+    implicitHeight: sessionList.contentHeight + 20
     required property real delegateHeight
     required property real fontSize
     ListView {
         id: sessionList
         model: Sessions.model
-        anchors.fill: parent
-        anchors.margins: 10
+        anchors {
+            fill: parent
+            margins: 10
+        }
         spacing: 8
         delegate: Rectangle {
             id: delegateRec

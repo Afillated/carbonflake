@@ -3,8 +3,8 @@
   imports = [
     ./hyprland
     ./quickshell
-    ./niri
-    ./xdg.nix
+    # ./niri someday, hyprland is just smoother
+    ./xdg
     ./theming
   ];
 

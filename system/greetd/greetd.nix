@@ -16,10 +16,10 @@
     splash = false
     wallpaper {
     	monitor =
-    	path = /etc/greetd/hypr/wallpaper.png
+    	path = /etc/greetd/hypr/wallpaper.jpg
     	fit_mode = file
     } 
   '';
-  environment.etc."greetd/hypr/wallpaper.png".source = ../desktop/hyprland/wallpapers/wallpaper.png;
+  environment.etc."greetd/hypr/wallpaper.jpg".source = ./hypr/wallpaper.jpg;
   environment.etc."greetd/quickshell".source = ./greeter;
 }

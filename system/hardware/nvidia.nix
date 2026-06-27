@@ -12,7 +12,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    nvtopPackages.nvidia
+    nvtopPackages.full
     brightnessctl
     mangohud
   ];
@@ -36,12 +36,5 @@
       amdgpuBusId = "PCI:100:0:0";
     };
     package = config.boot.kernelPackages.nvidiaPackages.stable;
-  };
-
-  # for wayland compositors
-  environment.sessionVariables = {
-    LIBVA_DRIVER_NAME = "nvidia";
-    __GLX_VENDOR_LIBRARY_NAME = "nvidia";
-    NVD_BACKEND = "direct";
   };
 }
