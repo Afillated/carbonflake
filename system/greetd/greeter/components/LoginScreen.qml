@@ -249,8 +249,6 @@ ClippingRectangle {
             bottomMargin: passwordArea.implicitHeight
             right: closeButton.left
             rightMargin: passwordArea.implicitWidth*1.4
-            top: parent.top
-            topMargin: login.screenHeight - (sessionMenu.height + passwordArea.implicitHeight)
         }
     }
 }

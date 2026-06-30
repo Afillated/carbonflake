@@ -52,7 +52,7 @@ hl.window_rule({
 
 hl.window_rule({
   name       = "float-screen-picker",
-  match      = {  title = "Select what to share", },
+  match      = { title = "Select what to share", },
 
   float      = true,
   size       = { "(monitor_w*0.5)", "(monitor_h*0.6)" },
@@ -78,9 +78,34 @@ hl.window_rule({
   opacity = 0.85,
 })
 
+hl.window_rule({
+  name = "steam-games",
+  match = { initial_class = "steam_app_.*" },
+  content = "game",
+  render_unfocused = true,
+})
+
 hl.workspace_rule({
   workspace = "special:magic",
   layout = "scrolling"
+})
+
+hl.workspace_rule({
+  workspace = "1",
+  persistent = true,
+  monitor = "eDP-1"
+})
+
+hl.workspace_rule({
+  workspace = "2",
+  persistent = true,
+  monitor = "eDP-1"
+})
+
+hl.workspace_rule({
+  workspace = "3",
+  persistent = true,
+  monitor = "eDP-1"
 })
 
 hl.layer_rule({
@@ -95,5 +120,5 @@ hl.layer_rule({
   match        = { namespace = "rofi" },
   blur         = true,
   ignore_alpha = 0.5,
-  animation = "popin 80%"
+  animation    = "popin 80%"
 })
