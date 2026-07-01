@@ -22,7 +22,6 @@
 
   # for ags and crackling noises
   hjem.users.carbon.files = {
-    # ".config/pipewire".source = ../../config/pipewire;
     ".config/pipewire/pipewire-pulse.d/10-adjustQuirkRules.conf".text = ''
       pulse.rules = [
       	{

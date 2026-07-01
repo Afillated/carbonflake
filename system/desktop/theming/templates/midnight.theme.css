@@ -13,6 +13,7 @@
 /* import theme modules */
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 
+/* transition fixes */
 @container body style(--animations: on) {
     .unreadPill__972a0, .wrapper__2ea32 .link__2ea32, .container__91a9d, .channel__972a0, .side_aa8da2 .item_aa8da2 {
         transition: padding-left, inset-inline-start, var(--list-item-transition);
@@ -26,6 +27,13 @@
     .container__91a9d:hover, .channel__972a0:hover {
         padding-left: 10px;
         margin-left: 8px; /* disable the old animation */
+    }
+}
+
+/* svg icon stuff */
+@container body style(--custom-dms-icon: custom) {
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before, .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8::before {
+        transform: rotate(-360deg);
     }
 }
 
