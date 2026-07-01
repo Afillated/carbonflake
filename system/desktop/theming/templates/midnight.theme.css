@@ -13,6 +13,22 @@
 /* import theme modules */
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 
+@container body style(--animations: on) {
+    .unreadPill__972a0, .wrapper__2ea32 .link__2ea32, .container__91a9d, .channel__972a0, .side_aa8da2 .item_aa8da2 {
+        transition: padding-left, inset-inline-start, var(--list-item-transition);
+        will-change: padding-left, inset-inline-start;
+    }
+    
+    .container__91a9d:hover .unreadPill__972a0, .channel__972a0:hover .unreadPill__972a0 {
+        inset-inline-start: 2px;
+    }
+
+    .container__91a9d:hover, .channel__972a0:hover {
+        padding-left: 10px;
+        margin-left: 8px; /* disable the old animation */
+    }
+}
+
 body {
     /* font options */
     --font: 'figtree'; /* change to '' for default discord font */

@@ -15,6 +15,14 @@ hl.monitor({
   scale    = "auto",
 })
 
+hl.monitor({
+  output   = "eDP-1",
+  mode     = "2560x1600@165",
+  position = "auto",
+  scale    = 2,
+  bitdepth = 10,
+})
+
 -------------------
 ---- AUTOSTART ----
 -------------------
@@ -22,7 +30,6 @@ hl.monitor({
 -- See https://wiki.hypr.land/Configuring/Basics/Autostart/
 
 hl.on("hyprland.start", function()
-  hl.exec_cmd("hyprpaper")
   hl.exec_cmd("qs")
   -- hl.exec_cmd("systemctl --user start hyprpolkitagent")
   hl.exec_cmd("systemctl --user start hypridle.service")

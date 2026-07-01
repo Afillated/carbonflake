@@ -19,6 +19,7 @@
     kdePackages.dolphin
     bibata-cursors
     xdg-utils
+    awww
   ];
 
   environment.sessionVariables = {

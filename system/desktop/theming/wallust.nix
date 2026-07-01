@@ -38,8 +38,8 @@
           target = "~/.config/Kvantum/wallust/wallust.kvconfig";
         };
         quickshell = {
-          template = "quickshell-colors.qml";
-          target = "~/.config/quickshell/theme/Colors.qml";
+          template = "shell-colors.json";
+          target = "~/.config/quickshell/theme/colors.json";
         };
       };
       hooks = {
