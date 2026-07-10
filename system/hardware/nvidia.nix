@@ -14,7 +14,6 @@
   environment.systemPackages = with pkgs; [
     nvtopPackages.full
     brightnessctl
-    mangohud
   ];
 
   # Load nvidia driver for Xorg and Wayland

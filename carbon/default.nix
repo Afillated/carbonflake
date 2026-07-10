@@ -14,7 +14,7 @@
     ../devlopment
   ];
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_zen;
   boot.initrd.supportedFilesystems = [ "btrfs" ];
 
   networking.hostName = "carbon"; # Define your hostname.
@@ -50,6 +50,10 @@
   };
 
   nixpkgs.config.allowUnfree = true;
+
+  services.logind.settings.Login = {
+    HandlePowerKey = "ignore";
+  };
 
   # Enable flakes
   nix.settings.experimental-features = [

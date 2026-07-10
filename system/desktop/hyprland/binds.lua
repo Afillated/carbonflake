@@ -28,7 +28,7 @@ hl.bind(mainMod .. " + F11", hl.dsp.window.fullscreen({ "maximised", "toggle" })
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("kitty -e yazi"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("hyprpicker -a -f hex"))
 hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("qs ipc call mainBar toggle"))
-hl.bind(mainMod .. " + G", hl.dsp.window.center({ window = "activewindow" }))
+hl.bind(mainMod .. " + G", hl.dsp.window.fullscreen_state({ internal = 1, client = 1, "toggle", "activewindow" }))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
@@ -94,4 +94,4 @@ hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true 
 
 -- Screenshot shortcuts
 hl.bind("Print", hl.dsp.exec_cmd("grimblast copy area"))
-hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("grimblast copy screen"))
+hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("grimblast copy screen"), { locked = true })
