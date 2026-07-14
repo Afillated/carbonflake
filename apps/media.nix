@@ -7,7 +7,6 @@
 {
   environment.systemPackages = with pkgs; [
     vlc
-    sly
     kdePackages.kdenlive
     krita
     amberol

@@ -24,10 +24,7 @@
       noto-fonts-color-emoji
       noto-fonts
       noto-fonts-cjk-sans
-      source-han-sans
-      source-han-serif
       comfortaa
-      quicksand
     ]
     ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
 

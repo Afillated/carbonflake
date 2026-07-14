@@ -6,7 +6,8 @@ hl.monitor({
 })
 
 hl.on("hyprland.start", function()
-  hl.exec_cmd("hyprpaper --config /etc/greetd/hypr/greetpaper.conf")
+  hl.exec_cmd("awww-daemon")
+  hl.exec_cmd("awww img /etc/greetd/hypr/wallpaper.jpg --transition-type none")
   hl.exec_cmd("qs -p /etc/greetd/quickshell")
 end)
 

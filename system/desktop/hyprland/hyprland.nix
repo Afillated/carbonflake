@@ -21,13 +21,11 @@ in
 
   environment.systemPackages = with pkgs; [
     hyprpicker
-    hyprpaper
     hyprpolkitagent
     hyprland-qt-support
     hyprcursor
     hyprshot
     grimblast
-    hyprlock
     hypridle
     hyprlauncher
     hyprtoolkit
@@ -45,8 +43,6 @@ in
     ".config/hypr/hyprland.lua".source = ./hyprland.lua;
     ".config/hypr/rules.lua".source = ./rules.lua;
     ".config/hypr/binds.lua".source = ./binds.lua;
-    ".config/hypr/hyprpaper.conf".source = ./hyprpaper.conf;
     ".config/hypr/hypridle.conf".source = ./hypridle.conf;
-    ".config/hypr/wallpapers".source = ./wallpapers;
   };
 }
