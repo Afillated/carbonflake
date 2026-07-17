@@ -20,11 +20,14 @@
     [
       font-awesome
       openmoji-color
+      source-han-sans
+      source-han-serif
       twemoji-color-font
       noto-fonts-color-emoji
       noto-fonts
       noto-fonts-cjk-sans
       comfortaa
+      quicksand
     ]
     ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
 

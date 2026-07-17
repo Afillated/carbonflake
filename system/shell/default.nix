@@ -45,7 +45,9 @@
       };
     };
     files = {
-      ".config/helix".source = ../../config/helix;
+      ".config/helix/config.toml".text = ''
+        theme = "base16_transparent"
+      '';
       ".config/fastfetch/config.jsonc".text = ''
         {
             "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
