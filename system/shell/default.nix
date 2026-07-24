@@ -15,7 +15,6 @@
     helix
     git
     tree
-    jmtpfs
     yt-dlp
     btop
     fastfetch
