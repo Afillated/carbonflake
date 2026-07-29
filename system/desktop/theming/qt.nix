@@ -22,9 +22,6 @@
   };
 
   hjem.users.carbon = {
-    environment.sessionVariables = {
-      QT_STYLE_OVERRIDE = "kvantum";
-    };
     files = {
       ".config/Kvantum/kvantum.kvconfig".text = ''
         [General]

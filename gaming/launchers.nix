@@ -1,7 +1,6 @@
 { pkgs, inputs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    prismlauncher
     winetricks
     heroic
   ];
