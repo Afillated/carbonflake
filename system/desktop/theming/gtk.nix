@@ -10,8 +10,9 @@
     gtk3
     gtk4
     gsettings-desktop-schemas
-    colloid-gtk-theme
+    # colloid-gtk-theme
     colloid-icon-theme
+    whitesur-gtk-theme
     glib
     # Additional packages for better cursor support
     gsettings-desktop-schemas # For GTK cursor theme support
@@ -23,7 +24,7 @@
   hjem.users.carbon.files = {
     ".config/gtk-3.0/settings.ini".text = ''
       [Settings]
-      gtk-theme-name=Colloid-Dark
+      gtk-theme-name=WhiteSur-Dark
       gtk-icon-theme-name=Colloid-dark
       gtk-font-name=FiraCode Nerd Font 11
       gtk-cursor-theme-name=Bibata-Modern-Classic
@@ -45,7 +46,7 @@
 
     ".config/gtk-4.0/settings.ini".text = ''
       [Settings]
-      gtk-theme-name=Colloid-Dark
+      gtk-theme-name=WhiteSur-Dark
       gtk-icon-theme-name=Colloid-dark
       gtk-font-name=FiraCode Nerd Font 11
       gtk-cursor-theme-name=Bibata-Modern-Classic

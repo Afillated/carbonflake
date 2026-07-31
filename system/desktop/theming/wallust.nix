@@ -48,7 +48,7 @@
         gtk3 = ''
           dconf write /org/gnome/desktop/interface/gtk-theme \"'Adwaita'\" && \
           sleep 2 && \
-          dconf write /org/gnome/desktop/interface/gtk-theme \"'Colloid-Dark'\"
+          dconf write /org/gnome/desktop/interface/gtk-theme \"'WhiteSur-Dark'\"
         '';
         gtk4 = ''
           dconf write /org/gnome/desktop/interface/color-scheme "'default'" && \

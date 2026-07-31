@@ -16,7 +16,7 @@
     clipse
     playerctl
     rofi
-    kdePackages.dolphin
+    nautilus
     bibata-cursors
     xdg-utils
     awww
