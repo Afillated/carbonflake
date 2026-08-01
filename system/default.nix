@@ -8,11 +8,11 @@
 {
   imports = [
     ./hjem/hjem.nix
-    ./greetd/greetd.nix
     ./hardware
     ./shell
     ./boot
     ./desktop
+    ./security
   ];
 
   fonts.packages =

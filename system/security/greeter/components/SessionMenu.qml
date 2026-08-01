@@ -25,6 +25,7 @@ ClippingRectangle {
             margins: 10
         }
         spacing: 8
+        interactive: false
         delegate: Rectangle {
             id: delegateRec
             radius: 12

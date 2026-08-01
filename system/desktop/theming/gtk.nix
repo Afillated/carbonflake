@@ -10,7 +10,6 @@
     gtk3
     gtk4
     gsettings-desktop-schemas
-    # colloid-gtk-theme
     colloid-icon-theme
     whitesur-gtk-theme
     glib
