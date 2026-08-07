@@ -173,6 +173,9 @@ hl.config({
     focus_fit_method = 1,
     column_width = 0.5
   },
+  binds = {
+    movefocus_cycles_fullscreen = true,
+  },
 })
 
 ----------------
