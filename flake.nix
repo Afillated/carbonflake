@@ -1,5 +1,5 @@
 {
-  description = "A flake for all my systems, I want consistency and stability hence carbonflake(yeah I just made this shit up lol)";
+  description = "";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -27,14 +27,6 @@
       url = "github:snugnug/hjem-rum";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.hjem.follows = "hjem";
-    };
-    hyprlauncher = {
-      url = "github:hyprwm/hyprlauncher";
-    };
-    qml-niri = {
-      url = "github:imiric/qml-niri/main";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.quickshell.follows = "quickshell";
     };
     grub-themes = {
       url = "github:jeslie0/nixos-grub-themes";

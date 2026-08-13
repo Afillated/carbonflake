@@ -1,7 +1,6 @@
 { pkgs, inputs, ... }:
 let
   grimblast = inputs.hyprland-contrib.packages.${pkgs.stdenv.hostPlatform.system}.grimblast;
-  hyprlauncher = inputs.hyprlauncher.packages.${pkgs.stdenv.hostPlatform.system}.default;
   # for hyprland-git
   # hyprland = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
   # hypr-xdg = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
@@ -27,7 +26,6 @@ in
     hyprshot
     grimblast
     hypridle
-    hyprlauncher
     hyprtoolkit
   ];
 

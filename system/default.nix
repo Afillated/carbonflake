@@ -15,27 +15,17 @@
     ./security
   ];
 
-  fonts.packages =
-    with pkgs;
-    [
-      font-awesome
-      openmoji-color
-      source-han-sans
-      source-han-serif
-      twemoji-color-font
-      noto-fonts-color-emoji
-      noto-fonts
-      noto-fonts-cjk-sans
-      comfortaa
-      quicksand
-    ]
-    ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
+  fonts.packages = with pkgs; [
+    hack-font
+    fira-code
+    noto-fonts
+    comfortaa
+    nerd-fonts.symbols-only
+    noto-fonts-color-emoji
+    twemoji-color-font
+  ];
 
   environment.systemPackages = with pkgs; [
     mission-center
-    seahorse
   ];
-
-  # Security
-  services.gnome.gnome-keyring.enable = true;
 }

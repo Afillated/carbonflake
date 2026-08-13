@@ -29,6 +29,11 @@
     NIXOS_OZONE_WL = "1";
   };
 
+  # for Nautilus
+  services.gvfs = {
+    enable = true;
+  };
+
   programs.uwsm = {
     enable = true;
   };
