@@ -10,6 +10,7 @@
       default = "saved"; # Default to last booted OS
       configurationLimit = 8;
       theme = inputs.grub-themes.packages.${pkgs.stdenv.hostPlatform.system}.nixos;
+      splashImage = null;
     };
     loader.efi.canTouchEfiVariables = true;
     # Add NTFS support
