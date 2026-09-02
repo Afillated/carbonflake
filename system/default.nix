@@ -7,7 +7,7 @@
 
 {
   imports = [
-    ./hjem/hjem.nix
+    ./hjem
     ./hardware
     ./shell
     ./boot

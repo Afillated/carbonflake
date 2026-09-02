@@ -214,13 +214,13 @@ hl.config({
 
     follow_mouse  = 1,
 
-    sensitivity   = -0.9, -- -1.0 - 1.0, 0 means no modification.
+    sensitivity   = -0.7, -- -1.0 - 1.0, 0 means no modification.
 
     touchpad      = {
       natural_scroll = true,
       scroll_factor = 0.2,
     },
-    accel_profile = " flat",
+    accel_profile = "flat",
   },
 })
 

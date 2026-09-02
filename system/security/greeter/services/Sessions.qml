@@ -18,8 +18,7 @@ Singleton {
         id: loader
         running: true
 
-        command: ["sh", "-c", "awk -F= '/^Name=/{name=$2} /^Exec=/{exec=$2} ENDFILE {if(name && exec) print name \"|\" exec; name=\"\"; exec=\"\"}' /run/current-system/sw/share/wayland-sessions/*.desktop"]
-
+        command: ["sh", "-c", "awk '/^Name=/{name=substr($0, 6)} /^Exec=/{exec=substr($0, 6)} ENDFILE {if(name && exec) print name \"|\" exec; name=\"\"; exec=\"\"}' /run/current-system/sw/share/wayland-sessions/*.desktop"]
         stdout: StdioCollector {
             onStreamFinished: {
                 const lines = this.text.trim().split('\n');

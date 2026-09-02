@@ -37,20 +37,9 @@
     LC_TIME = "en_IN";
   };
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.carbon = {
-    isNormalUser = true;
-    description = "Afillatedcarbon";
-    extraGroups = [
-      "networkmanager"
-      "wheel"
-      "gamemode"
-    ];
-    packages = with pkgs; [ ];
-  };
-
   nixpkgs.config.allowUnfree = true;
 
+  # A little something that helps
   services.logind.settings.Login = {
     HandlePowerKey = "ignore";
   };

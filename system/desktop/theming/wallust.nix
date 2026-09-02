@@ -25,6 +25,10 @@
           template = "hyprcolor.lua";
           target = "~/.config/hypr/colors.lua";
         };
+        hyprtoolkit = {
+          template = "hyprtoolkit.conf";
+          target = "~/.config/hypr/hyprtoolkit.conf";
+        };
         kitty = {
           template = "catcolors.conf";
           target = "~/.config/kitty/colors.conf";
