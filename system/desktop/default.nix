@@ -42,7 +42,7 @@
     ".config/rofi".source = ../../config/rofi;
     ".config/kitty/kitty.conf".text = ''
       include colors.conf
-      watch_config no
+      touch_scroll_multiplier 5.0
       background_opacity 1
       scrollbar_handle_opacity 0
       scrollbar never
