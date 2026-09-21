@@ -7,10 +7,11 @@
 {
   environment.systemPackages = with pkgs; [
     vesktop
-    (discord.override {
-      withVencord = true;
-    })
+    # (discord.override {
+    #   withVencord = true;
+    # })
     element-desktop
+    mprisence
   ];
 
   hjem.users.carbon = {
