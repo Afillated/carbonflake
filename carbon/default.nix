@@ -1,5 +1,5 @@
 {
-  config,
+  lib,
   pkgs,
   inputs,
   ...
@@ -38,6 +38,23 @@
   };
 
   nixpkgs.config.allowUnfree = true;
+
+  systemd.services.set-conservation-mode = {
+    description = "Set Lenovo Conservation Mode to 80% limit";
+    wantedBy = [ "multi-user.target" ];
+    serviceConfig = {
+      Type = "oneshot";
+      RemainAfterExit = true;
+      ExecStart = "${pkgs.bash}/bin/bash -c 'echo 1 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode'";
+    };
+  };
+
+  specialisation.mobile.configuration = {
+    system.nixos.tags = [ "mobile" ];
+
+    systemd.services.set-conservation-mode.serviceConfig.ExecStart =
+      lib.mkForce "${pkgs.bash}/bin/bash -c 'echo 0 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode'";
+  };
 
   # A little something that helps
   services.logind.settings.Login = {
