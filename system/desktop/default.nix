@@ -20,6 +20,8 @@
     bibata-cursors
     xdg-utils
     awww
+    walker
+    elephant
   ];
 
   environment.sessionVariables = {

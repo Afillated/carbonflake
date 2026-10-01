@@ -31,10 +31,10 @@ hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("qs ipc call mainBar toggle"))
 hl.bind(mainMod .. " + G", hl.dsp.window.fullscreen_state({ internal = 1, client = 0, action = "toggle" }))
 
 -- Move focus with mainMod + arrow keys
-hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
+hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }), { repeating = true })
+hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }), { repeating = true })
+hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }), { repeating = true })
+hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }), { repeating = true })
 
 -- Moving windows with mainMod + Shift + Arrow keys
 hl.bind(mainMod .. " + SHIFT + left", hl.dsp.window.swap({ direction = "left" }), { repeating = true })
@@ -57,14 +57,14 @@ for i = 1, 10 do
 end
 
 -- Switching workspaces with Z and X
-hl.bind(mainMod .. " + Z", hl.dsp.focus({ workspace = "e-1" }))
-hl.bind(mainMod .. " + X", hl.dsp.focus({ workspace = "e+1" }))
-hl.bind(mainMod .. " + SHIFT + X", hl.dsp.focus({ workspace = "+1" }))
-hl.bind(mainMod .. " + SHIFT + Z", hl.dsp.focus({ workspace = "-1" }))
+hl.bind(mainMod .. " + Z", hl.dsp.focus({ workspace = "e-1" }), { repeating = true })
+hl.bind(mainMod .. " + X", hl.dsp.focus({ workspace = "e+1" }), { repeating = true })
+hl.bind(mainMod .. " + SHIFT + X", hl.dsp.focus({ workspace = "+1" }), { repeating = true })
+hl.bind(mainMod .. " + SHIFT + Z", hl.dsp.focus({ workspace = "-1" }), { repeating = true })
 
 -- Moving windows to a previous/next workspace with Z and X
-hl.bind(mainMod .. " + CTRL + X", hl.dsp.window.move({ workspace = "e+1" }))
-hl.bind(mainMod .. " + CTRL + Z", hl.dsp.window.move({ workspace = "e-1" }))
+hl.bind(mainMod .. " + CTRL + X", hl.dsp.window.move({ workspace = "e+1" }), { repeating = true })
+hl.bind(mainMod .. " + CTRL + Z", hl.dsp.window.move({ workspace = "e-1" }), { repeating = true })
 
 -- Example special workspace (scratchpad)
 hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"))

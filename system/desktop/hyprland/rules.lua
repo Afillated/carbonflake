@@ -117,6 +117,14 @@ hl.layer_rule({
 })
 
 hl.layer_rule({
+  match = { namespace = "notifications" },
+  blur = true,
+  blur_popups = true,
+  animation = "popin 87%",
+  ignore_alpha = 0.1,
+})
+
+hl.layer_rule({
   match        = { namespace = "rofi" },
   blur         = true,
   ignore_alpha = 0.5,

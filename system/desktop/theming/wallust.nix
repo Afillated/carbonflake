@@ -13,6 +13,10 @@
           template = "midnight.theme.css";
           target = "~/.config/vesktop/themes/midnight-wall.theme.css";
         };
+        discord = {
+          template = "midnight.theme.css";
+          target = "~/.config/Vencord/themes/midnight-wall.theme.css";
+        };
         gtk4 = {
           template = "gtk-colors.css";
           target = "~/.config/gtk-4.0/colors.css";

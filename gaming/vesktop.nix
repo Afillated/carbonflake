@@ -7,9 +7,9 @@
 {
   environment.systemPackages = with pkgs; [
     vesktop
-    # (discord.override {
-    #   withVencord = true;
-    # })
+    (discord.override {
+      withVencord = true;
+    })
     element-desktop
     mprisence
   ];
@@ -28,6 +28,8 @@
     };
     files = {
       ".config/vesktop/themes/HorizontalServerList.theme.css".source =
+        ./vesktop-themes/HorizontalServerList.theme.css;
+      ".config/Vencord/themes/HorizontalServerList.theme.css".source =
         ./vesktop-themes/HorizontalServerList.theme.css;
       ".config/vesktop/themes/midnight.theme.css".source = ./vesktop-themes/midnight.theme.css;
     };
