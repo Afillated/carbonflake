@@ -7,7 +7,6 @@
 
 {
   imports = [
-    # ./spicetify.nix
     ./media.nix
     ./diskutils.nix
     ./obs.nix

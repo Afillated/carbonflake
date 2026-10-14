@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, lib, ... }:
 {
   imports = [
     ./hyprland
@@ -6,6 +6,7 @@
     # ./niri someday, hyprland is just smoother
     ./xdg
     ./theming
+    ./scripts
   ];
 
   environment.systemPackages = with pkgs; [
@@ -15,12 +16,10 @@
     wl-clipboard
     clipse
     playerctl
-    rofi
     nautilus
     bibata-cursors
     xdg-utils
     awww
-    walker
     elephant
   ];
 
@@ -40,15 +39,55 @@
     enable = true;
   };
 
-  hjem.users.carbon.files = {
-    ".config/rofi".source = ../../config/rofi;
-    ".config/kitty/kitty.conf".text = ''
-      include colors.conf
-      touch_scroll_multiplier 5.0
-      background_opacity 1
-      scrollbar_handle_opacity 0
-      scrollbar never
-      window_margin_width 0.0
-    '';
+  hjem.users.carbon = {
+    systemd.services = {
+      elephant = {
+        description = "Elephant";
+        wantedBy = [ "graphical-session.target" ];
+        partOf = [ "graphical-session.target" ];
+        after = [ "graphical-session.target" ];
+        environment.PATH = lib.mkForce "/run/current-system/sw/bin:/etc/profiles/per-user/carbon/bin";
+        serviceConfig = {
+          ExecStart = "${pkgs.elephant}/bin/elephant";
+          Restart = "on-failure";
+        };
+      };
+    };
+    files = {
+      ".config/kitty/kitty.conf".text = ''
+        include colors.conf
+        touch_scroll_multiplier 5.0
+        background_opacity 1
+        scrollbar_handle_opacity 0
+        scrollbar never
+        window_margin_width 0.0
+        remember_window_size no
+      '';
+      ".config/elephant/elephant.toml".source = (pkgs.formats.toml { }).generate "elephant.toml" {
+        ignored_providers = [
+          "snippets"
+          "unicode"
+          "websearch"
+          "providerlist"
+          "runner"
+          "playerctl"
+          "bluetooth"
+          "files"
+          "symbols"
+          "windows"
+          "wireplumber"
+          "todo"
+          "archlinuxpkgs"
+          "bookmarks"
+          "clipboard"
+        ];
+        providers = {
+          default = [
+            "desktopapplications"
+            "calc"
+          ];
+        };
+      };
+    };
   };
 }

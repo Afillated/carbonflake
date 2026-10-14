@@ -3,15 +3,11 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-26.05";
     hyprland.url = "github:hyprwm/Hyprland";
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
     };
     nh.url = "github:nix-community/nh";
-    spicetify-nix = {
-      url = "github:Gerg-L/spicetify-nix";
-    };
     hyprland-contrib = {
       url = "github:hyprwm/contrib";
     };
@@ -39,7 +35,6 @@
       nixpkgs,
       zen-browser,
       nh,
-      nixpkgs-stable,
       ...
     }@inputs:
     {
@@ -50,7 +45,6 @@
           specialArgs = { inherit inputs; };
           modules = [
             ./carbon
-            inputs.spicetify-nix.nixosModules.default
             inputs.hjem.nixosModules.default
           ];
         };

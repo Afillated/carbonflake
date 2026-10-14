@@ -7,6 +7,7 @@
       "networkmanager"
       "wheel"
       "gamemode"
+      "power"
     ];
     packages = with pkgs; [ ];
   };

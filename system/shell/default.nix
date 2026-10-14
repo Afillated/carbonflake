@@ -28,6 +28,12 @@
     EDITOR = "hx";
   };
 
+  environment.shellAliases = {
+    y = "yazi";
+    wallnext = "qs ipc call wallpaper next";
+    wallreload = "qs ipc call wallpaper reload";
+  };
+
   programs.bash.enable = true;
   programs.zoxide = {
     enable = true;

@@ -4,7 +4,7 @@
 
 -- Set programs that you use
 local terminal = "kitty"
-local menu     = "rofi -show drun"
+local menu     = "qs ipc call launcher open"
 local mainMod  = "SUPER"
 
 ---------------------

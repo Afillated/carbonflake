@@ -39,11 +39,12 @@
   nixpkgs.config.allowUnfree = true;
 
   services.udev.extraRules = ''
-    SUBSYSTEM=="platform", KERNEL=="VPC2004:00", RUN+="${pkgs.coreutils}/bin/chgrp power /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode", RUN+="${pkgs.coreutils}/bin/chmod g+w /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode"
+    ACTION=="add|bind", SUBSYSTEM=="platform", KERNEL=="VPC2004:00", \
+      RUN+="${pkgs.coreutils}/bin/chgrp power %S%p/conservation_mode", \
+      RUN+="${pkgs.coreutils}/bin/chmod g+w %S%p/conservation_mode"
   '';
-
   users.groups.power = { };
-  users.users.carbon.extraGroups = [ "power" ];
+
   # A little something that helps
   services.logind.settings.Login = {
     HandlePowerKey = "ignore";
