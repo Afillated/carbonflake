@@ -25,9 +25,12 @@
 
   environment.sessionVariables = {
     XCURSOR_THEME = "Bibata-Modern-Classic";
-    XCURSOR_SIZE = "24";
+    XCURSOR_SIZE = "32";
     ELECTRON_OZONE_PLATFORM_HINT = "auto";
     NIXOS_OZONE_WL = "1";
+
+    # for display scale bullshit
+    QT_FONT_DPI = "120";
   };
 
   # for Nautilus
@@ -62,6 +65,8 @@
         scrollbar never
         window_margin_width 0.0
         remember_window_size no
+        font_family Hack Mono
+        font_size 13
       '';
       ".config/elephant/elephant.toml".source = (pkgs.formats.toml { }).generate "elephant.toml" {
         ignored_providers = [

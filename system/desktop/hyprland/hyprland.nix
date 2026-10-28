@@ -34,7 +34,7 @@ in
     __GLX_VENDOR_LIBRARY_NAME = "nvidia";
     NVD_BACKEND = "direct";
     HYPRCURSOR_THEME = "Bibata-Modern-Classic";
-    HYPRCURSOR_SIZE = "24";
+    HYPRCURSOR_SIZE = "32";
   };
 
   hjem.users.carbon.files = {

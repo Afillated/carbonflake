@@ -11,7 +11,7 @@
     davinci-resolve
     ffmpeg
     krita
-    amberol
+    # amberol
     (mpv.override {
       scripts = [
         mpvScripts.mpv-playlistmanager

@@ -19,7 +19,7 @@ hl.monitor({
   output   = "eDP-1",
   mode     = "2560x1600@165",
   position = "auto",
-  scale    = 2,
+  scale    = 1.6,
   bitdepth = 10,
 })
 
@@ -42,8 +42,8 @@ end)
 
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
 
-hl.env("XCURSOR_SIZE", "24")
-hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("XCURSOR_SIZE", "32")
+hl.env("HYPRCURSOR_SIZE", "32")
 hl.env("QT_QPA_PLATFORM", "wayland")
 hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
 
@@ -74,8 +74,8 @@ hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
   general = {
-    gaps_in          = 5,
-    gaps_out         = 10,
+    gaps_in          = 6,
+    gaps_out         = 12,
 
     border_size      = 2,
 
@@ -94,7 +94,7 @@ hl.config({
   },
 
   decoration = {
-    rounding         = 10,
+    rounding         = 12,
     rounding_power   = 2,
 
     -- Change transparency of focused and unfocused windows

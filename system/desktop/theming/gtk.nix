@@ -18,16 +18,27 @@
     adwaita-icon-theme # Fallback icon theme
   ];
 
-  programs.dconf.enable = true;
+  programs.dconf = {
+    enable = true;
+    profiles.user.databases = [
+      {
+        settings = {
+          "org/gnome/desktop/interface" = {
+            text-scaling-factor = 1.25;
+          };
+        };
+      }
+    ];
+  };
 
   hjem.users.carbon.files = {
     ".config/gtk-3.0/settings.ini".text = ''
       [Settings]
       gtk-theme-name=WhiteSur-Dark
       gtk-icon-theme-name=Colloid-dark
-      gtk-font-name=FiraCode Nerd Font 11
+      gtk-font-name=FiraCode Nerd Font 13
       gtk-cursor-theme-name=Bibata-Modern-Classic
-      gtk-cursor-theme-size=24
+      gtk-cursor-theme-size=32
       gtk-application-prefer-dark-theme=1
       gtk-xft-antialias=1
       gtk-xft-hinting=1
@@ -47,9 +58,9 @@
       [Settings]
       gtk-theme-name=WhiteSur-Dark
       gtk-icon-theme-name=Colloid-dark
-      gtk-font-name=FiraCode Nerd Font 11
+      gtk-font-name=FiraCode Nerd Font 13
       gtk-cursor-theme-name=Bibata-Modern-Classic
-      gtk-cursor-theme-size=24
+      gtk-cursor-theme-size=32
       gtk-application-prefer-dark-theme=1
     '';
   };
